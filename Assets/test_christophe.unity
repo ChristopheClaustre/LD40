@@ -827,10 +827,10 @@ MonoBehaviour:
   m_alcoolState: 0
   m_passengerAlcoolState: 0
   m_passengerFearState: 0
-  m_maxPassengerFearState: 50
   m_remainingDistance: 2000
   m_vitesse: 0
   m_dirtyState: 0
+  m_maxPassengerFearState: 50
   m_lags: 1
 --- !u!4 &1351786076
 Transform:
@@ -1011,7 +1011,7 @@ MonoBehaviour:
   m_vitesse: 10
   m_decors:
   - {fileID: 1616445315784694, guid: 23b3c50ab610b62459c74a18671864a2, type: 2}
-  m_Ecart: {x: 11, y: 11}
+  m_Ecart: {x: 10, y: 10}
   m_generatedDecors:
   - {fileID: 42621713}
   - {fileID: 1085322288}
