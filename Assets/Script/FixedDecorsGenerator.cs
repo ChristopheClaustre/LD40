@@ -130,7 +130,7 @@ public class FixedDecorsGenerator :
     {
         foreach (GameObject decors in m_generatedFixedDecors)
         {
-            decors.transform.position += Vector3.Lerp(Vector3.zero, (decors.transform.position - PointApparition).normalized * m_vitesse, Time.deltaTime);
+            decors.transform.position += new Vector3(0, 0, m_vitesse * Time.deltaTime);
         }
     }
 

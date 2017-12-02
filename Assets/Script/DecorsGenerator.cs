@@ -116,8 +116,8 @@ public class DecorsGenerator :
             Vector3 vector = new Vector3()
             {
                 x = PointApparition.x + Random.Range(-m_largeurZoneApparition / 2, m_largeurZoneApparition / 2),
-                y = PointApparition.y + Random.Range(-m_longueurZoneApparition / 2, m_longueurZoneApparition / 2),
-                z = PointApparition.z
+                y = PointApparition.y,
+                z = PointApparition.z + Random.Range(-m_longueurZoneApparition / 2, m_longueurZoneApparition / 2)
             };
             GenerateOneDecors(vector);
         }
@@ -134,7 +134,7 @@ public class DecorsGenerator :
     {
         foreach (GameObject decors in m_generatedDecors)
         {
-            decors.transform.position += Vector3.Lerp(Vector3.zero, (decors.transform.position - PointApparition).normalized * m_vitesse, Time.deltaTime);
+            decors.transform.position += new Vector3(0, 0, m_vitesse * Time.deltaTime);
         }
     }
 
