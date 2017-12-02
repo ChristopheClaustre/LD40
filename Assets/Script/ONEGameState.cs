@@ -8,7 +8,7 @@ using System.Collections.Generic;
 /***************************************************/
 /***  THE CLASS             ************************/
 /***************************************************/
-public class GameState :
+public class ONEGameState :
     MonoBehaviour
 {
     #region Sub-classes/enum
@@ -74,6 +74,10 @@ public class GameState :
     {
         get { return m_listInput[0]; }
     }
+    public ONEGameState Instance
+    {
+        get { return m_instance; }
+    }
 
     /********  PROTECTED        ************************/
 
@@ -110,6 +114,8 @@ public class GameState :
     [SerializeField, Range(0.0f, 1.0f)] private float m_lags = 0;
     private List<EnumInput> m_listInput = new List<EnumInput>();
 
+    private static ONEGameState m_instance;
+
     #endregion
     #region Methods
     /***************************************************/
@@ -117,6 +123,11 @@ public class GameState :
     /***************************************************/
 
     /********  UNITY MESSAGES   ************************/
+
+    private void Awake()
+    {
+        m_instance = this;
+    }
 
     // Use this for initialization
     private void Start()
