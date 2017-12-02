@@ -50,3 +50,6 @@ TagManager:
   - name: fond
     uniqueID: 3805937673
     locked: 0
+  - name: obstacle
+    uniqueID: 3130705153
+    locked: 0
