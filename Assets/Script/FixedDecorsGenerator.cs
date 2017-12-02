@@ -8,7 +8,7 @@ using System.Collections.Generic;
 /***************************************************/
 /***  THE CLASS             ************************/
 /***************************************************/
-public class DecorsGenerator :
+public class FixedDecorsGenerator :
     MonoBehaviour
 {
     #region Property
@@ -54,14 +54,11 @@ public class DecorsGenerator :
     /********  PRIVATE          ************************/
 
     [SerializeField] private GameObject m_hotspotApparition;
-    [SerializeField] private float m_largeurZoneApparition = 5;
-    [SerializeField] private float m_longueurZoneApparition = 3;
     [SerializeField] private GameObject m_hotspotDisparition;
     [SerializeField] private float m_vitesse = 1.0f;
-    [SerializeField] private List<GameObject> m_decors = new List<GameObject>();
-    [SerializeField] private float m_ecartMin = 10;
-    [SerializeField] private float m_ecartMax = 14;
-    [SerializeField] private List<GameObject> m_generatedDecors = new List<GameObject>();
+    [SerializeField] private List<GameObject> m_fixedDecors = new List<GameObject>();
+    [SerializeField] private float m_longeurFixedDecors = 10;
+    [SerializeField] private List<GameObject> m_generatedFixedDecors = new List<GameObject>();
 
     #endregion
     #region Methods
@@ -100,24 +97,23 @@ public class DecorsGenerator :
 
     private void Sort()
     {
-        m_generatedDecors.Sort(
+        m_generatedFixedDecors.Sort(
             (d, d2) => Mathf.RoundToInt((d.transform.position.z - PointApparition.z) - (d2.transform.position.z - PointApparition.z))
             );
     }
 
     private void GenerateDecors()
     {
-        if (m_decors.Count == 0)
+        if (m_fixedDecors.Count == 0)
             return;
 
-        float ecart = Random.Range(m_ecartMin, m_ecartMax);
-        if (m_generatedDecors.Count == 0 || m_generatedDecors[0].transform.position.z - PointApparition.z > ecart)
+        if (m_generatedFixedDecors.Count == 0 || m_generatedFixedDecors[0].transform.position.z - PointApparition.z > m_longeurFixedDecors)
         {
             Vector3 vector = new Vector3()
             {
-                x = PointApparition.x + Random.Range(-m_largeurZoneApparition / 2, m_largeurZoneApparition / 2),
-                y = PointApparition.y + Random.Range(-m_longueurZoneApparition / 2, m_longueurZoneApparition / 2),
-                z = PointApparition.z
+                x = PointApparition.x,
+                y = PointApparition.y,
+                z = m_generatedFixedDecors[0].transform.position.z - m_longeurFixedDecors
             };
             GenerateOneDecors(vector);
         }
@@ -125,14 +121,14 @@ public class DecorsGenerator :
 
     private void GenerateOneDecors(Vector3 p_nouvellePosition)
     {
-        GameObject nouveau = Instantiate(m_decors[Random.Range(0, m_decors.Count - 1)], transform);
+        GameObject nouveau = Instantiate(m_fixedDecors[Random.Range(0, m_fixedDecors.Count - 1)], transform);
         nouveau.transform.position = p_nouvellePosition;
-        m_generatedDecors.Add(nouveau);
+        m_generatedFixedDecors.Add(nouveau);
     }
 
     private void MoveDecors()
     {
-        foreach (GameObject decors in m_generatedDecors)
+        foreach (GameObject decors in m_generatedFixedDecors)
         {
             decors.transform.position += Vector3.Lerp(Vector3.zero, (decors.transform.position - PointApparition).normalized * m_vitesse, Time.deltaTime);
         }
@@ -141,12 +137,12 @@ public class DecorsGenerator :
     private void CleanDecors()
     {
         int i = 0;
-        while (i < m_generatedDecors.Count)
+        while (i < m_generatedFixedDecors.Count)
         {
-            GameObject decors = m_generatedDecors[i];
+            GameObject decors = m_generatedFixedDecors[i];
             if (Vector3.Distance(decors.transform.position, PointApparition) > Vector3.Distance(PointDisparition, PointApparition))
             {
-                m_generatedDecors.Remove(decors);
+                m_generatedFixedDecors.Remove(decors);
                 Destroy(decors);
             }
             else
