@@ -74,7 +74,7 @@ public class ONEGameState :
     {
         get { return m_listInput[0]; }
     }
-    public ONEGameState Instance
+    public static ONEGameState Instance
     {
         get { return m_instance; }
     }
