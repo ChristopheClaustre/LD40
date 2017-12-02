@@ -40,13 +40,11 @@ public class DecorsGenerator :
     // Use this for initialization
     private void Start()
     {
-        if (! m_zoneDeplacement.Contains(m_zoneApparition.min)
+        if (!m_zoneDeplacement.Contains(m_zoneApparition.min)
             || !m_zoneDeplacement.Contains(m_zoneApparition.max))
         {
-            Debug.Log("'Zone Apparition' doit être contenu dans 'mZoneDeplacement'");
+            Debug.Log("'Zone Apparition' doit être contenu dans 'Zone Deplacement'");
         }
-
-        //GenerateOneDecors();
     }
 
     // Update is called once per frame
@@ -83,7 +81,7 @@ public class DecorsGenerator :
     {
         float realEcart = Random.Range(m_Ecart.x, m_Ecart.y);
         Vector3 nouvellePosition = GeneratePosition();
-        if (Vector3.Distance(m_generatedDecors[m_generatedDecors.Count - 1].transform.position, nouvellePosition) > realEcart)
+        if (m_generatedDecors.TrueForAll(d => Vector3.Distance(d.transform.position, nouvellePosition) > realEcart))
             GenerateOneDecors(nouvellePosition);
     }
 
@@ -92,7 +90,7 @@ public class DecorsGenerator :
         if (m_decors.Count == 0)
             return;
 
-        GameObject nouveau = Instantiate(m_decors[Random.Range(0, m_decors.Count - 1)]);
+        GameObject nouveau = Instantiate(m_decors[Random.Range(0, m_decors.Count - 1)], this.transform);
         nouveau.transform.position = p_nouvellePosition;
         m_generatedDecors.Add(nouveau);
     }
