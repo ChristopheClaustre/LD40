@@ -18,14 +18,6 @@ public class ONEGameState :
 
     /********  PUBLIC           ************************/
 
-    public enum EnumInput
-    {
-        eBlank = 0,
-        eLeft = -1,
-        eRight = 1,
-        eNbInput = 3
-    }
-
     /********  PROTECTED        ************************/
 
     /********  PRIVATE          ************************/
@@ -70,7 +62,7 @@ public class ONEGameState :
     {
         get { return m_lags; }
     }
-    public EnumInput CurrentFrameInput
+    public float CurrentFrameInput
     {
         get { return m_listInput[0]; }
     }
@@ -112,7 +104,7 @@ public class ONEGameState :
     [Header("Initialization Only :")]
     [SerializeField, Range(50, 100)] private int m_maxPassengerFearState = 50;
     [SerializeField, Range(0.0f, 1.0f)] private float m_lags = 0;
-    private List<EnumInput> m_listInput = new List<EnumInput>();
+    private List<float> m_listInput = new List<float>();
 
     private static ONEGameState m_instance;
 
@@ -134,15 +126,15 @@ public class ONEGameState :
     {
         for (int i = 0; i < Mathf.RoundToInt(m_lags / Time.deltaTime) ; ++i) // << CACA !!!!!!!
         {
-            m_listInput.Add(EnumInput.eBlank);
+            m_listInput.Add(0);
         }
     }
 
     // Update is called once per frame
     private void Update()
     {
-        // input
-        m_listInput.Add((EnumInput) Mathf.RoundToInt(Input.GetAxis("Move car")));
+        // add new input
+        m_listInput.Add(Input.GetAxis("Move car"));
         m_listInput.RemoveAt(0);
 
         // distance
