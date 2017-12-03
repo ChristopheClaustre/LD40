@@ -26,7 +26,7 @@ public class Obstacle :
     [SerializeField]
     private float m_obstacleWidth;
     [SerializeField]
-    private float m_fearEffect;
+    private float m_fearEffect = 30;
     [SerializeField]
     private bool m_deadlyTrap;
 
@@ -51,6 +51,7 @@ public class Obstacle :
     // Update is called once per frame
     private void Update()
     {
+
     }
 
     void OnTriggerEnter(Collider p_touchedCollider)
@@ -63,8 +64,7 @@ public class Obstacle :
             }
             else
             {
-                //Increase fear on game stat (use m_fearEffect value)
-                Debug.Log(m_fearEffect);
+                ONEGameState.Instance.AddFear(m_fearEffect);
             }
         }
         
