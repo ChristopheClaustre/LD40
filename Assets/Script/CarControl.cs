@@ -33,6 +33,10 @@ public class CarControl :
     [Range(-1.0f, 1.0f)]
     private float m_direction = 0.0f;
 
+    private bool m_isOnRight = true;
+    private bool m_isOnLeft = true;
+    private uint m_positionOnRaod;
+
     #endregion
     #region Methods
     /***************************************************/
@@ -50,7 +54,46 @@ public class CarControl :
     private void Update()
     {
         moveCar(m_direction);
+        m_positionOnRaod = computePositionOnRoad();
+        Debug.Log(m_positionOnRaod);
     }
+
+    void OnTriggerStay(Collider p_touchedCollider)
+    {
+        if (p_touchedCollider.CompareTag("rightLane"))
+        {
+            if (!m_isOnRight)
+            {
+                m_isOnRight = true;
+            }
+        }
+        if (p_touchedCollider.CompareTag("leftLane"))
+        {
+            if (!m_isOnLeft)
+            {
+                m_isOnLeft = true;
+            }
+        }
+    }
+
+    void OnTriggerExit(Collider p_leavedCollider)
+    {
+        if (p_leavedCollider.CompareTag("rightLane"))
+        {
+            if (m_isOnRight)
+            {
+                m_isOnRight = false;
+            }
+        }
+        if (p_leavedCollider.CompareTag("leftLane"))
+        {
+            if (m_isOnLeft)
+            {
+                m_isOnLeft = false;
+            }
+        }
+    }
+
 
     /********  OUR MESSAGES     ************************/
 
@@ -73,6 +116,22 @@ public class CarControl :
         newXValue = transform.position.x + Mathf.Lerp(-100, 100, mouvement);
         newXValue = Mathf.Clamp(newXValue, -m_maxPositionLeft, m_maxPositionRight);
         transform.position = new Vector3(newXValue, transform.position.y, transform.position.z);
+    }
+
+    private uint computePositionOnRoad()
+    {
+        if (m_isOnRight)
+        {
+            return 0;
+        }
+        else if (m_isOnLeft)
+        {
+            return 1;
+        }
+        else
+        {
+            return 2;
+        }
     }
 
     #endregion
