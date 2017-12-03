@@ -138,6 +138,7 @@ public class ONEGameState :
     // Use this for initialization
     private void Start()
     {
+        m_listInput.Add(0);
         for (int i = 0; i < Mathf.RoundToInt(m_lags / Time.deltaTime) ; ++i) // << CACA !!!!!!!
         {
             m_listInput.Add(0);
