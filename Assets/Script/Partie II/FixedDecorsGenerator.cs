@@ -72,6 +72,7 @@ public class FixedDecorsGenerator :
     // Use this for initialization
     private void Start()
     {
+        Sort();
     }
 
     // Update is called once per frame
@@ -82,8 +83,6 @@ public class FixedDecorsGenerator :
 
     private void FixedUpdate()
     {
-        Sort();
-
         GenerateDecors();
         CleanDecors();
     }
@@ -124,7 +123,7 @@ public class FixedDecorsGenerator :
     {
         GameObject nouveau = Instantiate(m_fixedDecors[Random.Range(0, m_fixedDecors.Count - 1)], transform);
         nouveau.transform.position = p_nouvellePosition;
-        m_generatedFixedDecors.Add(nouveau);
+        m_generatedFixedDecors.Insert(0, nouveau);
     }
 
     private void MoveDecors()
