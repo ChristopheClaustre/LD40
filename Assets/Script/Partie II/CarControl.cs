@@ -33,9 +33,9 @@ public class CarControl :
     [Range(-1.0f, 1.0f)]
     private float m_direction = 0.0f;*/
 
-    private bool m_isOnRight = true;
-    private bool m_isOnLeft = true;
-    private uint m_positionOnRaod;
+    private bool m_isOnRight = false;
+    private bool m_isOnLeft = false;
+    private uint m_positionOnRoad;
 
     #endregion
     #region Methods
@@ -55,25 +55,19 @@ public class CarControl :
     private void Update()
     {
         MoveCar(ONEGameState.Instance.CurrentFrameInput);
-        m_positionOnRaod = computePositionOnRoad();
-        Debug.Log(m_positionOnRaod);
+        m_positionOnRoad = computePositionOnRoad();
+        ONEGameState.Instance.changeRoadFearFactor(m_positionOnRoad);
     }
 
     void OnTriggerStay(Collider p_touchedCollider)
     {
         if (p_touchedCollider.CompareTag("rightLane"))
         {
-            if (!m_isOnRight)
-            {
                 m_isOnRight = true;
-            }
         }
         if (p_touchedCollider.CompareTag("leftLane"))
         {
-            if (!m_isOnLeft)
-            {
                 m_isOnLeft = true;
-            }
         }
     }
 
@@ -81,17 +75,11 @@ public class CarControl :
     {
         if (p_leavedCollider.CompareTag("rightLane"))
         {
-            if (m_isOnRight)
-            {
-                m_isOnRight = false;
-            }
+            m_isOnRight = false;
         }
         if (p_leavedCollider.CompareTag("leftLane"))
         {
-            if (m_isOnLeft)
-            {
-                m_isOnLeft = false;
-            }
+            m_isOnLeft = false;
         }
     }
 

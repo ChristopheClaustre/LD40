@@ -117,9 +117,12 @@ public class ONEGameState :
     [SerializeField, Range(0, 5)] private float m_vitesseDescenteFear = 5;
     [SerializeField, Range(0, 10)] private float m_maxVitesseVoiture = 1; // m / s
     //[SerializeField, Range(0, 1)] private float m_vitesseAugmentationInput = 0.05f; // (% du max) / s
+    [SerializeField, Range(0, 1)] private float m_leftRoadDescenteFearFactor = 0.5f; // Si voiture sur voie de gauche
+    [SerializeField, Range(0, 1)] private float m_outOfRoadDescenteFearFactor = 0.0f;// Si voiture sur trottoire
     [Header("Initialization Only :")]
     [SerializeField, Range(0.0f, 1.0f)] private float m_lags = 0;
     private List<float> m_listInput = new List<float>();
+    private float m_fearFactorRoadLane;
 
     private static ONEGameState m_instance;
 
@@ -159,7 +162,7 @@ public class ONEGameState :
         m_currentDistance += m_vitesse * Time.deltaTime;
 
         // fear
-        m_passengerFearState = Mathf.Max(0, m_passengerFearState - (m_vitesseDescenteFear * Time.deltaTime));
+        m_passengerFearState = Mathf.Max(0, m_passengerFearState - (m_vitesseDescenteFear* m_fearFactorRoadLane * Time.deltaTime));
     }
 
     /********  OUR MESSAGES     ************************/
@@ -171,6 +174,21 @@ public class ONEGameState :
         m_passengerFearState += p_increment;
     }
 
+    public void changeRoadFearFactor(uint roadLane)
+    {
+        if(roadLane == 2)
+        {
+            m_fearFactorRoadLane = m_outOfRoadDescenteFearFactor;
+        }
+        else if (roadLane == 1)
+        {
+            m_fearFactorRoadLane = m_leftRoadDescenteFearFactor;
+        }
+        else
+        {
+            m_fearFactorRoadLane = 1.0f;
+        }
+    }
     /********  PROTECTED        ************************/
 
     /********  PRIVATE          ************************/

@@ -67,8 +67,8 @@ public class Obstacle :
                 ONEGameState.Instance.AddFear(m_fearEffect);
             }
         }
-        
     }
+    
 
     /********  OUR MESSAGES     ************************/
 
@@ -77,6 +77,5 @@ public class Obstacle :
     /********  PROTECTED        ************************/
 
     /********  PRIVATE          ************************/
-
     #endregion
 }
