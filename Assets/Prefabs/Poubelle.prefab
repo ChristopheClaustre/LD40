@@ -81,8 +81,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41fbba41dd139454d9ee27c32d324f77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_obstacleWidth: 0
-  m_fearEffect: 10
+  m_obstacleWidth: 1.8
+  m_fearEffect: 30
   m_deadlyTrap: 0
 --- !u!212 &212159854712583398
 SpriteRenderer:
