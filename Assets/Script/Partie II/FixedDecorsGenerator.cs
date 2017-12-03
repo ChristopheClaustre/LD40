@@ -72,6 +72,11 @@ public class FixedDecorsGenerator :
     // Use this for initialization
     private void Start()
     {
+        m_generatedFixedDecors.Clear();
+
+        foreach (Transform child in transform)
+            m_generatedFixedDecors.Add(child.gameObject);
+
         Sort();
     }
 

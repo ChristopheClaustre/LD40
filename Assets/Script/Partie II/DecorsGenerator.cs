@@ -75,6 +75,11 @@ public class DecorsGenerator :
     // Use this for initialization
     private void Start()
     {
+        m_generatedDecors.Clear();
+
+        foreach (Transform child in transform)
+            m_generatedDecors.Add(child.gameObject);
+        
         Sort();
     }
 
