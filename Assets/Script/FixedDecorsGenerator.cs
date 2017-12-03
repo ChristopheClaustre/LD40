@@ -56,6 +56,7 @@ public class FixedDecorsGenerator :
     [SerializeField] private GameObject m_hotspotApparition;
     [SerializeField] private GameObject m_hotspotDisparition;
     [SerializeField] private float m_vitesse = 1.0f;
+    [SerializeField] private bool m_useMyVitesse = false;
     [SerializeField] private List<GameObject> m_fixedDecors = new List<GameObject>();
     [SerializeField] private float m_longeurFixedDecors = 10;
     [SerializeField] private List<GameObject> m_generatedFixedDecors = new List<GameObject>();
@@ -130,7 +131,8 @@ public class FixedDecorsGenerator :
     {
         foreach (GameObject decors in m_generatedFixedDecors)
         {
-            decors.transform.position += new Vector3(0, 0, m_vitesse * Time.deltaTime);
+            float vitesse = (m_useMyVitesse) ? m_vitesse : ONEGameState.Instance.Vitesse;
+            decors.transform.position += new Vector3(0, 0, vitesse * Time.deltaTime);
         }
     }
 

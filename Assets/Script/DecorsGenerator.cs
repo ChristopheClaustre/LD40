@@ -58,6 +58,7 @@ public class DecorsGenerator :
     [SerializeField] private float m_longueurZoneApparition = 3;
     [SerializeField] private GameObject m_hotspotDisparition;
     [SerializeField] private float m_vitesse = 1.0f;
+    [SerializeField] private bool m_useMyVitesse = false;
     [SerializeField] private List<GameObject> m_decors = new List<GameObject>();
     [SerializeField] private float m_ecartMin = 10;
     [SerializeField] private float m_ecartMax = 14;
@@ -134,7 +135,8 @@ public class DecorsGenerator :
     {
         foreach (GameObject decors in m_generatedDecors)
         {
-            decors.transform.position += new Vector3(0, 0, m_vitesse * Time.deltaTime);
+            float vitesse = (m_useMyVitesse)? m_vitesse : ONEGameState.Instance.Vitesse;
+            decors.transform.position += new Vector3(0, 0, vitesse * Time.deltaTime);
         }
     }
 
