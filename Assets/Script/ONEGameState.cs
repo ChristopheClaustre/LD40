@@ -30,6 +30,13 @@ public class ONEGameState :
 
     /********  PUBLIC           ************************/
 
+    // Instance
+    public static ONEGameState Instance
+    {
+        get { return m_instance; }
+    }
+
+    // paramètre de la partie
     public int AlcoolState
     {
         get { return m_alcoolState; }
@@ -38,7 +45,7 @@ public class ONEGameState :
     {
         get { return m_passengerAlcoolState; }
     }
-    public int PassengerFearState
+    public float PassengerFearState
     {
         get { return m_passengerFearState; }
     }
@@ -46,11 +53,15 @@ public class ONEGameState :
     {
         get { return m_maxPassengerFearState; }
     }
-    public float RemainingDistance
+    public float MaxDistance
     {
-        get { return m_remainingDistance; }
+        get { return m_maxDistance; }
     }
-    public int Vitesse
+    public float CurrentDistance
+    {
+        get { return m_currentDistance; }
+    }
+    public float Vitesse
     {
         get { return m_vitesse; }
     }
@@ -66,9 +77,9 @@ public class ONEGameState :
     {
         get { return m_listInput[0]; }
     }
-    public static ONEGameState Instance
+    public float MaxVitesseVoiture
     {
-        get { return m_instance; }
+        get { return m_maxVitesseVoiture; }
     }
 
     /********  PROTECTED        ************************/
@@ -95,14 +106,17 @@ public class ONEGameState :
 
     /********  PRIVATE          ************************/
 
-    [SerializeField, Range(0, 10)] private int m_alcoolState = 0;
-    [SerializeField, Range(0, 10)] private int m_passengerAlcoolState = 0;
-    [SerializeField, Range(100, 0)] private int m_passengerFearState = 0;
-    [SerializeField, Range(2000, 0)] private float m_remainingDistance = 2000;
-    [SerializeField, Range(0, 10)] private int m_vitesse = 0;
+    [SerializeField, Range(0, 10)] private int m_alcoolState = 0; // nombre de verre
+    [SerializeField, Range(0, 10)] private int m_passengerAlcoolState = 0; // << dépends de m_alcoolState
+    [SerializeField, Range(0, 100)] private float m_passengerFearState = 0;
+    [SerializeField, Range(2000, 0)] private float m_maxDistance = 2000; // m
+    private float m_currentDistance = 0; // m
+    [SerializeField, Range(0, 30)] private float m_vitesse = 10; // m / s
     [SerializeField, Range(0, 10)] private int m_dirtyState = 0;
+    [SerializeField, Range(50, 100)] private int m_maxPassengerFearState = 50; // << dépends de m_alcoolState
+    [SerializeField, Range(0, 1)] private float m_maxVitesseVoiture = 0.5f; // m / s
+    //[SerializeField, Range(0, 1)] private float m_vitesseAugmentationInput = 0.05f; // (% du max) / s
     [Header("Initialization Only :")]
-    [SerializeField, Range(50, 100)] private int m_maxPassengerFearState = 50;
     [SerializeField, Range(0.0f, 1.0f)] private float m_lags = 0;
     private List<float> m_listInput = new List<float>();
 
@@ -135,10 +149,12 @@ public class ONEGameState :
     {
         // add new input
         m_listInput.Add(Input.GetAxis("Move car"));
+
+        // clear input from last frame
         m_listInput.RemoveAt(0);
 
         // distance
-        m_remainingDistance -= m_vitesse * Time.deltaTime;
+        m_currentDistance += m_vitesse * Time.deltaTime;
     }
 
     /********  OUR MESSAGES     ************************/
