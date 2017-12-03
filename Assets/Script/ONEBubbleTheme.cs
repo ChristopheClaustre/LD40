@@ -84,27 +84,14 @@ public class ONEBubbleTheme :
     public Theme getRandomNormalBubble()
     {
         List<Theme> normalThemeList = m_themes.FindAll(findNormalTheme);
-        if(normalThemeList.Count > 0 )
-        {
-            return normalThemeList[UnityEngine.Random.Range(0, normalThemeList.Count - 1)];
-        }
-        else
-        {
-            throw new Exception();
-        }
+        return normalThemeList[UnityEngine.Random.Range(0, normalThemeList.Count)];
+
     }
 
     public Theme getRandomShoutBubble()
     {
         List<Theme> fearThemeList = m_themes.FindAll(findFearTheme);
-        if (fearThemeList.Count > 0)
-        {
-            return fearThemeList[UnityEngine.Random.Range(0, fearThemeList.Count - 1)];
-        }
-        else
-        {
-            throw new Exception();
-        }
+        return fearThemeList[UnityEngine.Random.Range(0, fearThemeList.Count)];
     }
 
     private bool findNormalTheme(Theme p_theme)
