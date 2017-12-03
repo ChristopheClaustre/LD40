@@ -23,15 +23,15 @@ public class CarControl :
 
     /********  PRIVATE          ************************/
 
-    [SerializeField]
-    private float m_vitesse = 1.0f;
+    /*[SerializeField]
+    private float m_vitesse = 1.0f;*/
     [SerializeField]
     private float m_maxPositionLeft = 100.0f;
     [SerializeField]
     private float m_maxPositionRight = 100.0f;
-    [SerializeField]
+    /*[SerializeField]
     [Range(-1.0f, 1.0f)]
-    private float m_direction = 0.0f;
+    private float m_direction = 0.0f;*/
 
     private bool m_isOnRight = true;
     private bool m_isOnLeft = true;
@@ -48,12 +48,13 @@ public class CarControl :
     // Use this for initialization
     private void Start()
     {
+
     }
 
     // Update is called once per frame
     private void Update()
     {
-        moveCar(m_direction);
+        MoveCar(ONEGameState.Instance.CurrentFrameInput);
         m_positionOnRaod = computePositionOnRoad();
         Debug.Log(m_positionOnRaod);
     }
@@ -105,17 +106,17 @@ public class CarControl :
 
     /*Change the car direction  
     -1 > 0 -> left 
-    0      -> straight 
-    0 < 1  -> right  
+       0      -> straight
+       0 < 1  -> right
     */
-    private void moveCar(float p_direction)
+    private void MoveCar(float p_coeff)
     {
-        float newXValue, mouvement;
-        mouvement = p_direction * m_vitesse * Time.deltaTime;
-        mouvement += 0.5f;
-        newXValue = transform.position.x + Mathf.Lerp(-100, 100, mouvement);
-        newXValue = Mathf.Clamp(newXValue, -m_maxPositionLeft, m_maxPositionRight);
-        transform.position = new Vector3(newXValue, transform.position.y, transform.position.z);
+        float mouvement = p_coeff * ONEGameState.Instance.MaxVitesseVoiture * Time.deltaTime;
+
+        Vector3 position = transform.position;
+        position.x = Mathf.Clamp(transform.position.x + mouvement, -m_maxPositionLeft, m_maxPositionRight);
+
+        transform.position = position;
     }
 
     private uint computePositionOnRoad()
