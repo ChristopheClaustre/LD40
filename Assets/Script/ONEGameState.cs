@@ -114,6 +114,7 @@ public class ONEGameState :
     [SerializeField, Range(0, 30)] private float m_vitesse = 10; // m / s
     [SerializeField, Range(0, 10)] private int m_dirtyState = 0;
     [SerializeField, Range(50, 100)] private int m_maxPassengerFearState = 50; // << dépends de m_alcoolState
+    [SerializeField, Range(0, 5)] private float m_vitesseDescenteFear = 5;
     [SerializeField, Range(0, 1)] private float m_maxVitesseVoiture = 0.5f; // m / s
     //[SerializeField, Range(0, 1)] private float m_vitesseAugmentationInput = 0.05f; // (% du max) / s
     [Header("Initialization Only :")]
@@ -156,11 +157,19 @@ public class ONEGameState :
 
         // distance
         m_currentDistance += m_vitesse * Time.deltaTime;
+
+        // fear
+        m_passengerFearState = Mathf.Max(0, m_passengerFearState - (m_vitesseDescenteFear * Time.deltaTime));
     }
 
     /********  OUR MESSAGES     ************************/
 
     /********  PUBLIC           ************************/
+
+    public void AddFear(float p_increment)
+    {
+        m_passengerFearState += p_increment;
+    }
 
     /********  PROTECTED        ************************/
 
