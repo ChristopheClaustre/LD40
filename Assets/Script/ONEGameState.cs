@@ -115,7 +115,7 @@ public class ONEGameState :
     [SerializeField, Range(0, 10)] private int m_dirtyState = 0;
     [SerializeField, Range(50, 100)] private int m_maxPassengerFearState = 50; // << dépends de m_alcoolState
     [SerializeField, Range(0, 5)] private float m_vitesseDescenteFear = 5;
-    [SerializeField, Range(0, 1)] private float m_maxVitesseVoiture = 0.5f; // m / s
+    [SerializeField, Range(0, 10)] private float m_maxVitesseVoiture = 1; // m / s
     //[SerializeField, Range(0, 1)] private float m_vitesseAugmentationInput = 0.05f; // (% du max) / s
     [Header("Initialization Only :")]
     [SerializeField, Range(0.0f, 1.0f)] private float m_lags = 0;
