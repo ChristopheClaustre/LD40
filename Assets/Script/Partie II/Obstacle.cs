@@ -22,15 +22,11 @@ public class Obstacle :
     /********  PROTECTED        ************************/
 
     /********  PRIVATE          ************************/
-
-    [SerializeField]
-    private float m_obstacleWidth;
+    
     [SerializeField]
     private float m_fearEffect = 30;
     [SerializeField]
     private bool m_deadlyTrap;
-
-    private BoxCollider m_obstacleCollider;
 
     #endregion
     #region Methods
@@ -43,9 +39,7 @@ public class Obstacle :
     // Use this for initialization
     private void Start()
     {
-        m_obstacleCollider = gameObject.AddComponent<BoxCollider>();
-        m_obstacleCollider.size = new Vector3(m_obstacleWidth,1.0f,1.0f);
-        m_obstacleCollider.isTrigger = true;
+
     }
 
     // Update is called once per frame
