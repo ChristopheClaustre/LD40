@@ -40,6 +40,11 @@ public class DecorsGenerator :
             return Vector3.zero;
         }
     }
+    public float DifficultyCoeff
+    {
+        get { return m_difficultyCoeff; }
+        set { m_difficultyCoeff = value; }
+    }
 
     #endregion
     #region Attributes
@@ -62,6 +67,8 @@ public class DecorsGenerator :
     [SerializeField] private List<GameObject> m_decors = new List<GameObject>();
     [SerializeField] private float m_ecartMin = 10;
     [SerializeField] private float m_ecartMax = 14;
+    [SerializeField] private float m_decalageMaxDueToDifficulty = 0;
+    [SerializeField, Range(0, 1)] private float m_difficultyCoeff = 0;
     [SerializeField] private List<GameObject> m_generatedDecors = new List<GameObject>();
 
     #endregion
@@ -115,7 +122,7 @@ public class DecorsGenerator :
         if (m_decors.Count == 0)
             return;
 
-        float ecart = Random.Range(m_ecartMin, m_ecartMax);
+        float ecart = Random.Range(m_ecartMin, m_ecartMax) - m_decalageMaxDueToDifficulty * m_difficultyCoeff;
         if (m_generatedDecors.Count == 0 || m_generatedDecors[0].transform.position.z - PointApparition.z > ecart)
         {
             Vector3 vector = new Vector3()
