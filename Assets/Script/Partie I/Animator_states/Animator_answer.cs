@@ -14,7 +14,7 @@ public class Animator_answer : StateMachineBehaviour {
     {
         if(animator.gameObject.GetComponent<ONEPartieIManager>().IsPlayerPlayed)
         {
-            if(!animator.gameObject.GetComponent<ONEPartieIManager>().IsGoodResponse)
+            if(!animator.gameObject.GetComponent<ONEPartieIManager>().isTheGoodAnswer())
             {
                 animator.SetInteger("Chance", animator.GetInteger("Chance") - 1);
             }
@@ -22,14 +22,13 @@ public class Animator_answer : StateMachineBehaviour {
             {
                 if(animator.gameObject.GetComponent<ONEPartieIManager>().IsPlayerWin)
                 {
-                    animator.SetBool("isReadForPart2", true);
+                    animator.SetBool("isReadyForPart2", true);
                 }
             }
             animator.SetBool("isAnswered", true);
         }
         //Set to false game manager flags
         animator.gameObject.GetComponent<ONEPartieIManager>().IsPlayerPlayed = false;
-        animator.gameObject.GetComponent<ONEPartieIManager>().IsGoodResponse = false;
         animator.gameObject.GetComponent<ONEPartieIManager>().IsPlayerWin = false;
     }
 

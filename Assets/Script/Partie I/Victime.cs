@@ -153,6 +153,9 @@ public class Victime :
 
     public void startDiscution()
     {
+        m_indexCurrentBubble = 0;
+        m_timerBubble = 0.0f;
+        m_answer = 0.0f;
         isInDiscution = true;
     }
 

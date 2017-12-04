@@ -281,10 +281,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da379fa748d37204f9e97aa298cf80d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_maxRound: 3
-  m_maxSentence: 5
+  m_maxRound: 2
+  m_maxSentence: 3
   m_nbOtherTheme: 5
-  m_vitesseBubble: 3
+  m_vitesseBubble: 2
   m_generetedVictime: {fileID: 1598574002145790, guid: 4b44f58a03bb7d749b55da51c47c5a43,
     type: 2}
 --- !u!4 &483475024

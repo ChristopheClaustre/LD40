@@ -57,16 +57,16 @@ public class ONEPartieIManager :
         }
     }
 
-    public bool IsGoodResponse
+    public bool GoodResponse
     {
         get
         {
-            return isGoodResponse;
+            return m_goodResponse;
         }
 
         set
         {
-            this.isGoodResponse = value;
+            this.m_goodResponse = value;
         }
     }
 
@@ -126,7 +126,7 @@ public class ONEPartieIManager :
     [SerializeField] private int m_numeroDeRound = 0; // << ébriété ??
 
     private bool isPlayerPlayed = false;
-    private bool isGoodResponse = false;
+    private bool m_goodResponse;
     private bool m_playerResponse;
     private bool isPlayerWin = false;
 
@@ -155,12 +155,20 @@ public class ONEPartieIManager :
     {
         if(isPlayerPlayed)
         {
-            if(isGoodResponse == m_playerResponse)
+            if(m_goodResponse != m_playerResponse)
             {
                 m_currentRound.m_remainingStrikes--;
             }
             m_numeroDeRound++;
             m_currentRound.m_remainingQuestions--;
+        }
+        if(m_currentRound.m_remainingStrikes > 0 && m_currentRound.m_remainingQuestions == 0)
+        {
+            isPlayerWin = true;
+        }
+        else
+        {
+            isPlayerWin = false;
         }
     }
 
@@ -185,13 +193,18 @@ public class ONEPartieIManager :
 
     public void sendAnswer(bool p_answer)
     {
-        isGoodResponse = p_answer;
+        m_goodResponse = p_answer;
     }
 
     public void playerAnswer(bool p_answer)
     {
         m_playerResponse = p_answer;
         isPlayerPlayed = true;
+    }
+
+    public bool isTheGoodAnswer()
+    {
+        return (m_goodResponse == m_playerResponse);
     }
 
     /********  PROTECTED        ************************/
