@@ -59,6 +59,7 @@ public class Obstacle :
             else
             {
                 ONEGameState.Instance.AddFear(m_fearEffect);
+                p_touchedCollider.gameObject.transform.Find("Victime").gameObject.GetComponent<BubbleGenerator>().generateShoutBubble();
             }
         }
     }
