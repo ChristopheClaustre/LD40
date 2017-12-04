@@ -179,6 +179,10 @@ public class ONEPartieIManager :
     public void generateVictime()
     {
         currentVictime = victimeGenerator.generateVictime();
+        //Generate a victime reset round variable
+        isPlayerPlayed = false;
+        isPlayerWin = false;
+        m_currentRound = new Round();
     }
 
     public void startAConversation()

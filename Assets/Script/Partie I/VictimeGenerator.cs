@@ -80,6 +80,9 @@ public class VictimeGenerator :
         newVictime.VitesseBubble = m_vitesseBubble;
         newVictime.MaxDiscution = m_maxRound;
         newVictime.MaxBubble = m_maxSentence;
+
+        //TODO Ajouter appel a l'habillage de la victime ICI
+
         return newVictime;
     }
 
