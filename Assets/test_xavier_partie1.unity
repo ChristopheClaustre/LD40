@@ -188,7 +188,6 @@ GameObject:
   m_Component:
   - component: {fileID: 401561651}
   - component: {fileID: 401561653}
-  - component: {fileID: 401561652}
   m_Layer: 0
   m_Name: Decor
   m_TagString: Untagged
@@ -213,23 +212,6 @@ Transform:
   m_Father: {fileID: 1575459406}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &401561652
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 401561650}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3fddcc582e336b748a8f4f4160bc52df, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
 --- !u!212 &401561653
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -281,7 +263,6 @@ GameObject:
   m_Component:
   - component: {fileID: 483475024}
   - component: {fileID: 483475023}
-  - component: {fileID: 483475025}
   m_Layer: 0
   m_Name: VictimeGenerator
   m_TagString: Untagged
@@ -302,7 +283,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_maxRound: 3
   m_maxSentence: 5
-  m_nbLovedTheme: 1
   m_nbOtherTheme: 5
   m_vitesseBubble: 3
   m_generetedVictime: {fileID: 1598574002145790, guid: 4b44f58a03bb7d749b55da51c47c5a43,
@@ -320,18 +300,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &483475025
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 483475022}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7761b792bb6c354ead35de9bdd27b23, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startDiscution: 0
 --- !u!1 &712311766
 GameObject:
   m_ObjectHideFlags: 0
@@ -513,6 +481,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 114349709181267932, guid: f1b84e2ba2e58ff49a5721514e14ec02,
+        type: 2}
+      propertyPath: m_themes.Array.data[1].typeOfClothes
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f1b84e2ba2e58ff49a5721514e14ec02, type: 2}
   m_IsPrefabParent: 0
@@ -666,6 +639,53 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!1001 &1397847191
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4132348590269978, guid: 65551fd5379ad2b4fb7dc28648f7bc9f, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 22.161251
+      objectReference: {fileID: 0}
+    - target: {fileID: 4132348590269978, guid: 65551fd5379ad2b4fb7dc28648f7bc9f, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -14.182751
+      objectReference: {fileID: 0}
+    - target: {fileID: 4132348590269978, guid: 65551fd5379ad2b4fb7dc28648f7bc9f, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -46.7707
+      objectReference: {fileID: 0}
+    - target: {fileID: 4132348590269978, guid: 65551fd5379ad2b4fb7dc28648f7bc9f, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4132348590269978, guid: 65551fd5379ad2b4fb7dc28648f7bc9f, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4132348590269978, guid: 65551fd5379ad2b4fb7dc28648f7bc9f, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4132348590269978, guid: 65551fd5379ad2b4fb7dc28648f7bc9f, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4132348590269978, guid: 65551fd5379ad2b4fb7dc28648f7bc9f, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114493251635609582, guid: 65551fd5379ad2b4fb7dc28648f7bc9f,
+        type: 2}
+      propertyPath: victimeGenerator
+      value: 
+      objectReference: {fileID: 483475023}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 65551fd5379ad2b4fb7dc28648f7bc9f, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1575459401
 GameObject:
   m_ObjectHideFlags: 0

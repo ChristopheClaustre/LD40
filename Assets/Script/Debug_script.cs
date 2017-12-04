@@ -4,20 +4,20 @@ using UnityEngine;
 
 public class Debug_script : MonoBehaviour {
 
-    public bool startDiscution;
+    public bool reponsePlayer;
+    public bool send;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        if(startDiscution)
+        if(send)
         {
-            startDiscution = false;
-            gameObject.GetComponent<VictimeGenerator>().generateVictime();
+            send = false;
+            gameObject.GetComponent<ONEPartieIManager>().playerAnswer(reponsePlayer);
         }
-
     }
 }

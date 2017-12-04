@@ -139,7 +139,7 @@ public class Victime :
             {
                 isInDiscution = false;
                 Debug.Log(m_answer > 0);
-                //TODO APPELLER FIN CONVERATION ON GAME MANAGER AVEC RESULTAT (ANSWER>0)
+                ONEPartieIManager.Instance.sendAnswer((m_answer > 0));
 
                 //Reinitialize answer
                 m_answer = 0.0f;

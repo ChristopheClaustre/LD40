@@ -18,18 +18,6 @@ public class ONEPartieIManager :
 
     /********  PUBLIC           ************************/
 
-    public enum EnumEtape
-    {
-        eInit,
-        eBonjour,
-        eMonologue,
-        eReponse,
-        eRalage,
-        eAurevoir,
-        ePartieII,
-        eNbEtape
-    };
-
     public class Round
     {
         [SerializeField] public int m_numberOfStrikes = 3;
@@ -49,6 +37,64 @@ public class ONEPartieIManager :
     /***************************************************/
 
     /********  PUBLIC           ************************/
+
+    // Instance
+    public static ONEPartieIManager Instance
+    {
+        get { return m_instance; }
+    }
+
+    public bool IsPlayerPlayed
+    {
+        get
+        {
+            return isPlayerPlayed;
+        }
+
+        set
+        {
+            isPlayerPlayed = value;
+        }
+    }
+
+    public bool IsGoodResponse
+    {
+        get
+        {
+            return isGoodResponse;
+        }
+
+        set
+        {
+            this.isGoodResponse = value;
+        }
+    }
+
+    public bool IsPlayerWin
+    {
+        get
+        {
+            return isPlayerWin;
+        }
+
+        set
+        {
+            isPlayerWin = value;
+        }
+    }
+
+    public Round CurrentRound
+    {
+        get
+        {
+            return m_currentRound;
+        }
+
+        set
+        {
+            m_currentRound = value;
+        }
+    }
 
     /********  PROTECTED        ************************/
 
@@ -76,11 +122,19 @@ public class ONEPartieIManager :
 
     /********  PRIVATE          ************************/
 
-    [SerializeField] private Round m_currentRound;
+    [SerializeField] private Round m_currentRound = new Round();
     [SerializeField] private int m_numeroDeRound = 0; // << ébriété ??
-    [SerializeField] private EnumEtape m_etape = EnumEtape.eBonjour;
-    [SerializeField] private float m_dureeTransistion = 1;
-    private float m_timer = 0;
+
+    private bool isPlayerPlayed = false;
+    private bool isGoodResponse = false;
+    private bool m_playerResponse;
+    private bool isPlayerWin = false;
+
+    public VictimeGenerator victimeGenerator;
+
+    Victime currentVictime;
+    private static ONEPartieIManager m_instance;
+    
 
     #endregion
     #region Methods
@@ -93,71 +147,20 @@ public class ONEPartieIManager :
     // Use this for initialization
     private void Start()
     {
-
+        m_instance = this;
     }
 
     // Update is called once per frame
     private void Update()
     {
-        switch (m_etape)
+        if(isPlayerPlayed)
         {
-            case EnumEtape.eBonjour:
-                m_timer -= Time.deltaTime;
-                if (m_timer <= 0)
-                {
-                    
-                }
-                break;
-            case EnumEtape.eMonologue:
-                if (false) // fin monologue
-                {
-                    // afficher UI
-                    //m_etape = EnumEtape.eReponse;
-                }
-                break;
-            case EnumEtape.eReponse:
-                if (Input.GetButton("Choose"))
-                {
-                    // cacher UI
-                    m_currentRound.m_remainingQuestions--;
-
-                    if (true == Input.GetAxis("Choose") > 0) // is Good Answer
-                    {
-
-                    }
-                    else // Bad Answer
-                    {
-                        m_currentRound.m_remainingStrikes--;
-                        m_timer = m_dureeTransistion;
-                        // lancer ralage
-                        m_etape = EnumEtape.eRalage;
-                    }
-                }
-                //else if (m_currentRound.m_r)
-                {
-
-                }
-                break;
-            case EnumEtape.eAurevoir:
-                break;
-            case EnumEtape.ePartieII:
-                break;
-            default:
-                break;
-        }
-        if (Input.GetAxis("Choose") > Mathf.Epsilon) // << Agree
-        {
-            if (m_etape == EnumEtape.eReponse)
+            if(isGoodResponse == m_playerResponse)
             {
-                if (true) // Good Answer
-                {
-
-                }
+                m_currentRound.m_remainingStrikes--;
             }
-        }
-        else if (Input.GetAxis("Choose") < Mathf.Epsilon) // << Disagree
-        {
-
+            m_numeroDeRound++;
+            m_currentRound.m_remainingQuestions--;
         }
     }
 
@@ -165,55 +168,36 @@ public class ONEPartieIManager :
 
     /********  PUBLIC           ************************/
 
-    public void NextStep()
+    public void generateVictime()
     {
-        switch (m_etape)
-        {
-            case EnumEtape.eBonjour:
-                m_currentRound = GenerateRound(m_numeroDeRound);
-                // TODO parle victime !!!
-                m_etape = EnumEtape.eMonologue;
-                break;
-            case EnumEtape.eMonologue:
-                // TODO afficher UI
-                m_etape = EnumEtape.eReponse;
-                break;
-            case EnumEtape.eReponse:
-                // TODO cacher UI
-                if (m_currentRound.m_remainingQuestions == 0)
-                {
-                    // TODO casse toi victime !!!
-                    m_etape = EnumEtape.eAurevoir;
-                }
-                else
-                {
-                    m_currentRound.m_remainingQuestions--;
-                    m_etape = EnumEtape.eMonologue;
-                }
-                break;
-            case EnumEtape.eAurevoir:
-                break;
-            case EnumEtape.ePartieII:
-                break;
-            default:
-                break;
-        }
+        currentVictime = victimeGenerator.generateVictime();
+    }
+
+    public void startAConversation()
+    {
+        currentVictime.startDiscution();
+    }
+
+    public void goPartie2()
+    {
+        //Active scene partie II (with parameters ?)
+    }
+
+    public void sendAnswer(bool p_answer)
+    {
+        isGoodResponse = p_answer;
+    }
+
+    public void playerAnswer(bool p_answer)
+    {
+        m_playerResponse = p_answer;
+        isPlayerPlayed = true;
     }
 
     /********  PROTECTED        ************************/
 
     /********  PRIVATE          ************************/
 
-    private Round GenerateRound(int p_difficulty)
-    {
-        return new Round()
-        {
-            m_numberOfQuestions = 3,
-            m_numberOfStrikes = 3
-        };
-        // TODO générer aléatoirement ?
-        // TODO générer en fonction de la vitesse
-    }
 
     #endregion
 }
