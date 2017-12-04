@@ -35,6 +35,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4182711271757696}
+  - component: {fileID: 114154932242485374}
   m_Layer: 0
   m_Name: Immeuble_droite
   m_TagString: Untagged
@@ -219,6 +220,22 @@ Transform:
   m_Father: {fileID: 4001240028605174}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &114154932242485374
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1280852613275332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b0355342434dc4ea18c35179b1b76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gameObject: {fileID: 1307533996257544, guid: 1bbf5673fa823844fbe547c13dd80235,
+    type: 2}
+  m_minFloors: 3
+  m_maxFloors: 5
+  m_increment: 1.28
 --- !u!114 &114505338162232488
 MonoBehaviour:
   m_ObjectHideFlags: 1

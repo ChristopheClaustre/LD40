@@ -67,6 +67,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4906945679113018}
+  - component: {fileID: 114995460256546002}
   m_Layer: 0
   m_Name: Immeuble_gauche
   m_TagString: Untagged
@@ -253,6 +254,22 @@ MonoBehaviour:
   m_materials:
   - {fileID: 2100000, guid: 84857aefc6b2a3048bdf1d4da6e5c215, type: 2}
   - {fileID: 2100000, guid: 0578f7946bcea7f45b27558dc56e5c35, type: 2}
+--- !u!114 &114995460256546002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1409523170010376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b0355342434dc4ea18c35179b1b76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gameObject: {fileID: 1061662608124294, guid: 8e650e53731ed0e4ba5a3ebeba7b40a9,
+    type: 2}
+  m_minFloors: 3
+  m_maxFloors: 5
+  m_increment: 1.28
 --- !u!212 &212008740644274470
 SpriteRenderer:
   m_ObjectHideFlags: 1
