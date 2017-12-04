@@ -130,7 +130,8 @@ public class ONEPartieIManager :
     private bool m_playerResponse;
     private bool isPlayerWin = false;
 
-    public VictimeGenerator victimeGenerator;
+    public VictimeGenerator m_victimeGenerator;
+    public VerresManager m_verreManager;
 
     Victime currentVictime;
     private static ONEPartieIManager m_instance;
@@ -159,8 +160,9 @@ public class ONEPartieIManager :
             {
                 m_currentRound.m_remainingStrikes--;
             }
-            m_numeroDeRound++;
             m_currentRound.m_remainingQuestions--;
+            m_numeroDeRound++;
+
         }
         if(m_currentRound.m_remainingStrikes > 0 && m_currentRound.m_remainingQuestions == 0)
         {
@@ -178,7 +180,7 @@ public class ONEPartieIManager :
 
     public void generateVictime()
     {
-        currentVictime = victimeGenerator.generateVictime();
+        currentVictime = m_victimeGenerator.generateVictime();
         //Generate a victime reset round variable
         isPlayerPlayed = false;
         isPlayerWin = false;
@@ -193,6 +195,12 @@ public class ONEPartieIManager :
     public void goPartie2()
     {
         //Active scene partie II (with parameters ?)
+    }
+
+    public void victimeLeave()
+    {
+        m_numeroDeRound++;
+        m_verreManager.addVerre();
     }
 
     public void sendAnswer(bool p_answer)

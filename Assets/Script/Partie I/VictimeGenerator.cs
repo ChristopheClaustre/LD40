@@ -88,6 +88,7 @@ public class VictimeGenerator :
     private void generateLoveList()
     {
         newVictime.addHatTheme(ONEBubbleTheme.Instance.getRandomHatTheme());
+        //TODO uncomment next line when theme with top clothers exist
         //newVictime.addTopTheme(ONEBubbleTheme.Instance.getRandomTopTheme());
     }
 

@@ -17,6 +17,11 @@ public class Animator_answer : StateMachineBehaviour {
             if(!animator.gameObject.GetComponent<ONEPartieIManager>().isTheGoodAnswer())
             {
                 animator.SetInteger("Chance", animator.GetInteger("Chance") - 1);
+                if(animator.GetInteger("Chance") == 0)
+                {
+                    //Notice the Manager about the victim leave
+                    animator.gameObject.GetComponent<ONEPartieIManager>().victimeLeave();
+                }
             }
             else
             {

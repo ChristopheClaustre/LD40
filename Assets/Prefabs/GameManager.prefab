@@ -84,4 +84,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_numeroDeRound: 0
-  victimeGenerator: {fileID: 0}
+  m_victimeGenerator: {fileID: 0}
+  m_verreManager: {fileID: 0}
