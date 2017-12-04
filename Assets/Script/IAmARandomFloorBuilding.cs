@@ -72,7 +72,9 @@ public class IAmARandomFloorBuilding :
     // Use this for initialization
     private void Start()
     {
-        AddOneFloor(2*m_increment);
+        int numberOfFloors = Random.Range(m_minFloors, m_maxFloors + 1);
+        for (int i = 2; i < numberOfFloors; ++i)
+            AddOneFloor(i * m_increment);
     }
 
     // Update is called once per frame
