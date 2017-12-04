@@ -40,18 +40,18 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Default
-    uniqueID: 0
-    locked: 0
-  - name: Route
-    uniqueID: 3283798141
-    locked: 0
-  - name: batiments
-    uniqueID: 3360343219
-    locked: 0
   - name: fond
     uniqueID: 3805937673
     locked: 0
   - name: obstacle
     uniqueID: 3130705153
+    locked: 0
+  - name: batiments
+    uniqueID: 3360343219
+    locked: 0
+  - name: Route
+    uniqueID: 3283798141
+    locked: 0
+  - name: Default
+    uniqueID: 0
     locked: 0
