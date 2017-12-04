@@ -126,7 +126,7 @@ public class FixedDecorsGenerator :
 
     private void GenerateOneDecors(Vector3 p_nouvellePosition)
     {
-        GameObject nouveau = Instantiate(m_fixedDecors[Random.Range(0, m_fixedDecors.Count - 1)], transform);
+        GameObject nouveau = Instantiate(m_fixedDecors[Random.Range(0, m_fixedDecors.Count)], transform);
         nouveau.transform.position = p_nouvellePosition;
         m_generatedFixedDecors.Insert(0, nouveau);
     }

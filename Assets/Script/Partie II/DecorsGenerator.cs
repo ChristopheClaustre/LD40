@@ -130,7 +130,7 @@ public class DecorsGenerator :
 
     private void GenerateOneDecors(Vector3 p_nouvellePosition)
     {
-        GameObject nouveau = Instantiate(m_decors[Random.Range(0, m_decors.Count - 1)], transform);
+        GameObject nouveau = Instantiate(m_decors[Random.Range(0, m_decors.Count)], transform);
         nouveau.transform.position = p_nouvellePosition;
         m_generatedDecors.Insert(0, nouveau);
     }
