@@ -52,6 +52,7 @@ public class Obstacle :
     {
         if (p_touchedCollider.CompareTag("Player"))
         {
+            GetComponent<AudioSource>().Play();
             if (m_deadlyTrap)
             {
                 //End game on game stat
