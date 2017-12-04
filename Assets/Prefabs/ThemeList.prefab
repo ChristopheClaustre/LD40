@@ -52,11 +52,51 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_themes:
-  - themeName: poubelle
-    themeImage: {fileID: 21300000, guid: 6b64dceeee0e6114d91fbef0d9677d6b, type: 3}
-    isThemeNormal: 1
-    isThemeFear: 1
-  - themeName: poubelle2
-    themeImage: {fileID: 21300000, guid: 69a71b9f654beca44b13ce9ab59ac629, type: 3}
+  - themeName: Alcool
+    themeImage: {fileID: 21300008, guid: e1e1dca25d61fbe4faa4578fb2085cdb, type: 3}
+    clothesImage: {fileID: 0}
     isThemeNormal: 1
     isThemeFear: 0
+    typeOfClothes: 0
+  - themeName: Death
+    themeImage: {fileID: 21300000, guid: e1e1dca25d61fbe4faa4578fb2085cdb, type: 3}
+    clothesImage: {fileID: 0}
+    isThemeNormal: 1
+    isThemeFear: 1
+    typeOfClothes: 0
+  - themeName: Car
+    themeImage: {fileID: 21300002, guid: e1e1dca25d61fbe4faa4578fb2085cdb, type: 3}
+    clothesImage: {fileID: 0}
+    isThemeNormal: 1
+    isThemeFear: 0
+    typeOfClothes: 0
+  - themeName: Nature
+    themeImage: {fileID: 21300004, guid: e1e1dca25d61fbe4faa4578fb2085cdb, type: 3}
+    clothesImage: {fileID: 0}
+    isThemeNormal: 1
+    isThemeFear: 0
+    typeOfClothes: 0
+  - themeName: Butterfly
+    themeImage: {fileID: 21300006, guid: e1e1dca25d61fbe4faa4578fb2085cdb, type: 3}
+    clothesImage: {fileID: 0}
+    isThemeNormal: 1
+    isThemeFear: 0
+    typeOfClothes: 0
+  - themeName: NBomb
+    themeImage: {fileID: 21300010, guid: e1e1dca25d61fbe4faa4578fb2085cdb, type: 3}
+    clothesImage: {fileID: 0}
+    isThemeNormal: 1
+    isThemeFear: 0
+    typeOfClothes: 0
+  - themeName: Trip
+    themeImage: {fileID: 21300014, guid: e1e1dca25d61fbe4faa4578fb2085cdb, type: 3}
+    clothesImage: {fileID: 0}
+    isThemeNormal: 1
+    isThemeFear: 0
+    typeOfClothes: 0
+  - themeName: Sock
+    themeImage: {fileID: 21300016, guid: e1e1dca25d61fbe4faa4578fb2085cdb, type: 3}
+    clothesImage: {fileID: 0}
+    isThemeNormal: 1
+    isThemeFear: 0
+    typeOfClothes: 0
