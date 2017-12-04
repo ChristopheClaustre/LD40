@@ -28,12 +28,11 @@ public class VictimeGenerator :
     [SerializeField]
     private int m_maxSentence = 5;
     [SerializeField]
-    private int m_nbLovedTheme = 3;
-    [SerializeField]
     private int m_nbOtherTheme = 5;
     [SerializeField]
     private float m_vitesseBubble = 3.0f;
 
+    private int m_nbLovedTheme = 3;
     public GameObject m_generetedVictime;
     private GameObject m_instanceVictime;
     Victime newVictime;
@@ -90,10 +89,9 @@ public class VictimeGenerator :
 
     private void generateLoveList()
     {
-        for(int i = 0; i < m_nbLovedTheme; i++)
-        {
-            newVictime.addLoveTheme(ONEBubbleTheme.Instance.getRandomNormalTheme());
-        }
+        newVictime.addLoveTheme(ONEBubbleTheme.Instance.getRandomHatTheme());
+        newVictime.addLoveTheme(ONEBubbleTheme.Instance.getRandomTopTheme());
+        newVictime.addLoveTheme(ONEBubbleTheme.Instance.getRandomBottomTheme());
     }
 
     private void generateOtherList()

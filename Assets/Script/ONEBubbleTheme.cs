@@ -13,6 +13,37 @@ public class ONEBubbleTheme :
     MonoBehaviour
 {
 
+    #region Sub-classes/enum
+    /***************************************************/
+    /***  SUB-CLASSES/ENUM      ************************/
+    /***************************************************/
+
+    /********  PUBLIC           ************************/
+
+    public enum typeClothers
+    {
+        eHat,
+        eTop,
+        eBottom,
+        eNbTypeClothers
+    };
+
+    [System.Serializable]
+    public struct Theme
+    {
+        public string themeName;
+        public Sprite themeImage;
+        public Sprite clothesImage;
+        public bool isThemeNormal;
+        public bool isThemeFear;
+        public typeClothers typeOfClothes;
+    }
+
+    /********  PROTECTED        ************************/
+
+    /********  PRIVATE          ************************/
+    
+    #endregion
     #region Property
     /***************************************************/
     /***  PROPERTY              ************************/
@@ -40,24 +71,7 @@ public class ONEBubbleTheme :
 
     /********  PRIVATE          ************************/
 
-    [System.Serializable]
-    public struct Theme
-    {
-        public string themeName;
-        public Sprite themeImage;
-        public Sprite clothesImage;
-        public bool isThemeNormal;
-        public bool isThemeFear;
 
-        //public override bool Equals(object obj)
-        //{
-        //    if (!(obj is Theme))
-        //        return false;
-
-        //    Theme mys = (Theme)obj;
-        //    return mys.themeName == themeName;
-        //}
-    }
     public List<Theme> m_themes = new List<Theme>();
     private static ONEBubbleTheme m_instance;
     #endregion
@@ -86,11 +100,6 @@ public class ONEBubbleTheme :
     /********  OUR MESSAGES     ************************/
 
     /********  PUBLIC           ************************/
-
-    /********  PROTECTED        ************************/
-
-    /********  PRIVATE          ************************/
-
     public int NbrTheme()
     {
         return m_themes.Count;
@@ -109,6 +118,28 @@ public class ONEBubbleTheme :
         return fearThemeList[UnityEngine.Random.Range(0, fearThemeList.Count)];
     }
 
+    public Theme getRandomHatTheme()
+    {
+        List<Theme> hatThemeList = m_themes.FindAll(findHatTheme);
+        return hatThemeList[UnityEngine.Random.Range(0, hatThemeList.Count)];
+    }
+
+    public Theme getRandomTopTheme()
+    {
+        List<Theme> topThemeList = m_themes.FindAll(findTopTheme);
+        return topThemeList[UnityEngine.Random.Range(0, topThemeList.Count)];
+    }
+
+    public Theme getRandomBottomTheme()
+    {
+        List<Theme> bottomThemeList = m_themes.FindAll(findBottomTheme);
+        return bottomThemeList[UnityEngine.Random.Range(0, bottomThemeList.Count)];
+    }
+
+    /********  PROTECTED        ************************/
+
+    /********  PRIVATE          ************************/
+
     private bool findNormalTheme(Theme p_theme)
     {
         return p_theme.isThemeNormal;
@@ -117,6 +148,21 @@ public class ONEBubbleTheme :
     private bool findFearTheme(Theme p_theme)
     {
         return p_theme.isThemeNormal;
+    }
+
+    private bool findHatTheme(Theme p_theme)
+    {
+        return (p_theme.typeOfClothes == typeClothers.eHat);
+    }
+
+    private bool findTopTheme(Theme p_theme)
+    {
+        return (p_theme.typeOfClothes == typeClothers.eTop);
+    }
+
+    private bool findBottomTheme(Theme p_theme)
+    {
+        return (p_theme.typeOfClothes == typeClothers.eBottom);
     }
 
     #endregion
