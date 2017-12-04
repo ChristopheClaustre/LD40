@@ -45,8 +45,18 @@ public class ONEBubbleTheme :
     {
         public string themeName;
         public Sprite themeImage;
+        public Sprite clothesImage;
         public bool isThemeNormal;
         public bool isThemeFear;
+
+        //public override bool Equals(object obj)
+        //{
+        //    if (!(obj is Theme))
+        //        return false;
+
+        //    Theme mys = (Theme)obj;
+        //    return mys.themeName == themeName;
+        //}
     }
     public List<Theme> m_themes = new List<Theme>();
     private static ONEBubbleTheme m_instance;
@@ -81,14 +91,19 @@ public class ONEBubbleTheme :
 
     /********  PRIVATE          ************************/
 
-    public Theme getRandomNormalBubble()
+    public int NbrTheme()
+    {
+        return m_themes.Count;
+    }
+
+    public Theme getRandomNormalTheme()
     {
         List<Theme> normalThemeList = m_themes.FindAll(findNormalTheme);
         return normalThemeList[UnityEngine.Random.Range(0, normalThemeList.Count)];
 
     }
 
-    public Theme getRandomShoutBubble()
+    public Theme getRandomShoutTheme()
     {
         List<Theme> fearThemeList = m_themes.FindAll(findFearTheme);
         return fearThemeList[UnityEngine.Random.Range(0, fearThemeList.Count)];
@@ -103,7 +118,6 @@ public class ONEBubbleTheme :
     {
         return p_theme.isThemeNormal;
     }
-
 
     #endregion
 }

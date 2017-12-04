@@ -52,12 +52,13 @@ public class BubbleGenerator :
     // Update is called once per frame
     private void Update()
     {
-        generateNormalBubble();
+      generateNormalBubble();
     }
     /********  OUR MESSAGES     ************************/
 
     /********  PUBLIC           ************************/
-    
+
+
     public void generateShoutBubble()
     {
         if (isShowingBubble)
@@ -103,7 +104,7 @@ public class BubbleGenerator :
         if (m_instanceBubble)
         {
             GameObject contain = m_instanceBubble.transform.Find("containe").gameObject;
-            contain.GetComponent<SpriteRenderer>().sprite = ONEBubbleTheme.Instance.getRandomNormalBubble().themeImage;
+            contain.GetComponent<SpriteRenderer>().sprite = ONEBubbleTheme.Instance.getRandomNormalTheme().themeImage;
         }
     }
 
@@ -113,7 +114,7 @@ public class BubbleGenerator :
         if (m_instanceBubble)
         {
             GameObject contain = m_instanceBubble.transform.Find("containe").gameObject;
-            contain.GetComponent<SpriteRenderer>().sprite = ONEBubbleTheme.Instance.getRandomShoutBubble().themeImage;
+            contain.GetComponent<SpriteRenderer>().sprite = ONEBubbleTheme.Instance.getRandomShoutTheme().themeImage;
         }
     }
 
