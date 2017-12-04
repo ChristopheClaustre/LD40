@@ -34,6 +34,7 @@ public class BubbleGenerator :
     private float m_waitSpacingTime = 0.0f;
 
     public GameObject m_bubble;
+    public GameObject m_bubble_fear;
     private GameObject m_instanceBubble;
 
     #endregion
@@ -110,7 +111,7 @@ public class BubbleGenerator :
 
     private void showFearBubble()
     {
-        m_instanceBubble = Instantiate(m_bubble, transform);
+        m_instanceBubble = Instantiate(m_bubble_fear, transform);
         if (m_instanceBubble)
         {
             GameObject contain = m_instanceBubble.transform.Find("containe").gameObject;
