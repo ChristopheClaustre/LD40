@@ -36,6 +36,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4644235173958918}
   - component: {fileID: 212762030483084244}
+  - component: {fileID: 114550220506020712}
   m_Layer: 5
   m_Name: Bubble
   m_TagString: Untagged
@@ -70,6 +71,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!114 &114550220506020712
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1829861244530100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1560535f2fbfe04488720f5baef8f04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_sounds:
+  - {fileID: 8300000, guid: d2a8b47e171c50d4b946c62fec71622b, type: 3}
+  - {fileID: 8300000, guid: 56121178ea5321e4582e8489eb78bc90, type: 3}
+  - {fileID: 8300000, guid: dd4e4e3e1dcb0c24e843d12c9d3b7c68, type: 3}
+  - {fileID: 8300000, guid: 7207f57aad25a2e41936d277a2acb0ce, type: 3}
 --- !u!212 &212762030483084244
 SpriteRenderer:
   m_ObjectHideFlags: 1
