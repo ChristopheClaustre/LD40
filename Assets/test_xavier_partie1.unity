@@ -233,7 +233,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114493251635609582, guid: 65551fd5379ad2b4fb7dc28648f7bc9f,
         type: 2}
-      propertyPath: victimeGenerator
+      propertyPath: m_victimeGenerator
       value: 
       objectReference: {fileID: 1710078030}
     - target: {fileID: 114493251635609582, guid: 65551fd5379ad2b4fb7dc28648f7bc9f,
@@ -241,11 +241,6 @@ Prefab:
       propertyPath: m_verreManager
       value: 
       objectReference: {fileID: 1852762285}
-    - target: {fileID: 114493251635609582, guid: 65551fd5379ad2b4fb7dc28648f7bc9f,
-        type: 2}
-      propertyPath: m_victimeGenerator
-      value: 
-      objectReference: {fileID: 1710078030}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 65551fd5379ad2b4fb7dc28648f7bc9f, type: 2}
   m_IsPrefabParent: 0
