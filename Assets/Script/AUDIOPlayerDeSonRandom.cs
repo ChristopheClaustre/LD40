@@ -56,6 +56,7 @@ public class AUDIOPlayerDeSonRandom :
 
     /********  PRIVATE          ************************/
 
+    [Header("Initialization only :")]
     [SerializeField] private List<AudioClip> m_sounds;
 
     #endregion
@@ -69,9 +70,11 @@ public class AUDIOPlayerDeSonRandom :
     // Use this for initialization
     private void Start()
     {
-        AudioSource audio = gameObject.AddComponent<AudioSource>();
+        AudioSource audio = gameObject.GetComponent<AudioSource>();
         audio.clip = m_sounds[Random.Range(0, m_sounds.Count)];
-        audio.Play();
+
+        if (audio.playOnAwake)
+            audio.Play();
     }
 
     // Update is called once per frame
