@@ -108,6 +108,9 @@ public class Victime :
     public GameObject m_bubble;
     private GameObject m_instanceBubble;
 
+    public ONEBubbleTheme.Theme m_hat;
+    public ONEBubbleTheme.Theme m_top;
+
 
     #endregion
     #region Methods
@@ -159,8 +162,15 @@ public class Victime :
         isInDiscution = true;
     }
 
-    public void addLoveTheme(ONEBubbleTheme.Theme p_theme)
+    public void addHatTheme(ONEBubbleTheme.Theme p_theme)
     {
+        m_hat = p_theme;
+        m_lovedThemes.Add(p_theme);
+    }
+
+    public void addTopTheme(ONEBubbleTheme.Theme p_theme)
+    {
+        m_top = p_theme;
         m_lovedThemes.Add(p_theme);
     }
 

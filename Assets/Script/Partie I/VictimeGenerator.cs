@@ -31,8 +31,7 @@ public class VictimeGenerator :
     private int m_nbOtherTheme = 5;
     [SerializeField]
     private float m_vitesseBubble = 3.0f;
-
-    private int m_nbLovedTheme = 1;
+    
     public GameObject m_generetedVictime;
     private GameObject m_instanceVictime;
     Victime newVictime;
@@ -65,11 +64,7 @@ public class VictimeGenerator :
 
     public Victime generateVictime()
     {
-        if (ONEBubbleTheme.Instance.NbrTheme() < m_nbLovedTheme)
-        {
-            Debug.LogWarning("Pas assez de theme pour eviter les incoherences");
-            m_nbLovedTheme = ONEBubbleTheme.Instance.NbrTheme() - 1;
-        }
+
         //Destroy last instance if existe
         Destroy(m_instanceVictime);
         //Craet new instance
@@ -80,8 +75,8 @@ public class VictimeGenerator :
         newVictime.VitesseBubble = m_vitesseBubble;
         newVictime.MaxDiscution = m_maxRound;
         newVictime.MaxBubble = m_maxSentence;
-
-        //TODO Ajouter appel a l'habillage de la victime ICI
+        //newVictime.transform.Find("Hat").gameObject.GetComponent<SpriteRenderer>().sprite = newVictime.m_hat.clothesImage;
+        //newVictime.transform.Find("Top").gameObject.GetComponent<SpriteRenderer>().sprite = newVictime.m_top.clothesImage;
 
         return newVictime;
     }
@@ -92,9 +87,8 @@ public class VictimeGenerator :
 
     private void generateLoveList()
     {
-        newVictime.addLoveTheme(ONEBubbleTheme.Instance.getRandomHatTheme());
-        //newVictime.addLoveTheme(ONEBubbleTheme.Instance.getRandomTopTheme());
-        //newVictime.addLoveTheme(ONEBubbleTheme.Instance.getRandomBottomTheme());
+        newVictime.addHatTheme(ONEBubbleTheme.Instance.getRandomHatTheme());
+        //newVictime.addTopTheme(ONEBubbleTheme.Instance.getRandomTopTheme());
     }
 
     private void generateOtherList()
