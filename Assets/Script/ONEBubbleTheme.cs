@@ -147,7 +147,7 @@ public class ONEBubbleTheme :
 
     private bool findFearTheme(Theme p_theme)
     {
-        return p_theme.isThemeNormal;
+        return p_theme.isThemeFear;
     }
 
     private bool findHatTheme(Theme p_theme)
