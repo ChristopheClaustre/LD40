@@ -116,6 +116,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 456455}
+  - component: {fileID: 456456}
   m_Layer: 0
   m_Name: Immeuble_gauche(Clone) (13)
   m_TagString: Untagged
@@ -138,6 +139,22 @@ Transform:
   m_Father: {fileID: 1812521201}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &456456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 456454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b0355342434dc4ea18c35179b1b76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gameObject: {fileID: 1061662608124294, guid: 8e650e53731ed0e4ba5a3ebeba7b40a9,
+    type: 2}
+  m_minFloors: 3
+  m_maxFloors: 5
+  m_increment: 1.28
 --- !u!1 &2872158
 GameObject:
   m_ObjectHideFlags: 0
@@ -288,6 +305,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 18672211}
+  - component: {fileID: 18672212}
   m_Layer: 0
   m_Name: Immeuble_droite(Clone) (24)
   m_TagString: Untagged
@@ -310,6 +328,22 @@ Transform:
   m_Father: {fileID: 882134799}
   m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &18672212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 18672210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b0355342434dc4ea18c35179b1b76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gameObject: {fileID: 1307533996257544, guid: 1bbf5673fa823844fbe547c13dd80235,
+    type: 2}
+  m_minFloors: 3
+  m_maxFloors: 5
+  m_increment: 1.28
 --- !u!1 &19920071
 GameObject:
   m_ObjectHideFlags: 0
@@ -318,6 +352,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 19920072}
+  - component: {fileID: 19920073}
   m_Layer: 0
   m_Name: Immeuble_gauche(Clone) (2)
   m_TagString: Untagged
@@ -340,6 +375,22 @@ Transform:
   m_Father: {fileID: 1812521201}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &19920073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 19920071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b0355342434dc4ea18c35179b1b76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gameObject: {fileID: 1061662608124294, guid: 8e650e53731ed0e4ba5a3ebeba7b40a9,
+    type: 2}
+  m_minFloors: 3
+  m_maxFloors: 5
+  m_increment: 1.28
 --- !u!1 &41871024
 GameObject:
   m_ObjectHideFlags: 0
@@ -596,6 +647,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 59371377}
+  - component: {fileID: 59371378}
   m_Layer: 0
   m_Name: Immeuble_droite(Clone) (22)
   m_TagString: Untagged
@@ -618,6 +670,22 @@ Transform:
   m_Father: {fileID: 882134799}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &59371378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 59371376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b0355342434dc4ea18c35179b1b76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gameObject: {fileID: 1307533996257544, guid: 1bbf5673fa823844fbe547c13dd80235,
+    type: 2}
+  m_minFloors: 3
+  m_maxFloors: 5
+  m_increment: 1.28
 --- !u!1 &68541254
 GameObject:
   m_ObjectHideFlags: 0
@@ -626,6 +694,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 68541255}
+  - component: {fileID: 68541256}
   m_Layer: 0
   m_Name: Immeuble_droite(Clone) (18)
   m_TagString: Untagged
@@ -648,6 +717,22 @@ Transform:
   m_Father: {fileID: 882134799}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &68541256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 68541254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b0355342434dc4ea18c35179b1b76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gameObject: {fileID: 1307533996257544, guid: 1bbf5673fa823844fbe547c13dd80235,
+    type: 2}
+  m_minFloors: 3
+  m_maxFloors: 5
+  m_increment: 1.28
 --- !u!1 &72874736
 GameObject:
   m_ObjectHideFlags: 0
@@ -1675,6 +1760,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 148141490}
+  - component: {fileID: 148141491}
   m_Layer: 0
   m_Name: Immeuble_gauche(Clone) (14)
   m_TagString: Untagged
@@ -1697,6 +1783,22 @@ Transform:
   m_Father: {fileID: 1812521201}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &148141491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 148141489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b0355342434dc4ea18c35179b1b76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gameObject: {fileID: 1061662608124294, guid: 8e650e53731ed0e4ba5a3ebeba7b40a9,
+    type: 2}
+  m_minFloors: 3
+  m_maxFloors: 5
+  m_increment: 1.28
 --- !u!1 &148350366
 GameObject:
   m_ObjectHideFlags: 0
@@ -1705,6 +1807,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 148350367}
+  - component: {fileID: 148350368}
   m_Layer: 0
   m_Name: Immeuble_gauche(Clone) (22)
   m_TagString: Untagged
@@ -1727,6 +1830,22 @@ Transform:
   m_Father: {fileID: 1812521201}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &148350368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 148350366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b0355342434dc4ea18c35179b1b76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gameObject: {fileID: 1061662608124294, guid: 8e650e53731ed0e4ba5a3ebeba7b40a9,
+    type: 2}
+  m_minFloors: 3
+  m_maxFloors: 5
+  m_increment: 1.28
 --- !u!1 &154526993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1806,6 +1925,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 155625433}
+  - component: {fileID: 155625434}
   m_Layer: 0
   m_Name: Immeuble_droite(Clone) (1)
   m_TagString: Untagged
@@ -1828,6 +1948,22 @@ Transform:
   m_Father: {fileID: 882134799}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &155625434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 155625432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b0355342434dc4ea18c35179b1b76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gameObject: {fileID: 1307533996257544, guid: 1bbf5673fa823844fbe547c13dd80235,
+    type: 2}
+  m_minFloors: 3
+  m_maxFloors: 5
+  m_increment: 1.28
 --- !u!1 &167693939
 GameObject:
   m_ObjectHideFlags: 0
@@ -1955,6 +2091,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 174009264}
+  - component: {fileID: 174009265}
   m_Layer: 0
   m_Name: Immeuble_droite(Clone)
   m_TagString: Untagged
@@ -1977,6 +2114,22 @@ Transform:
   m_Father: {fileID: 882134799}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &174009265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 174009263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b0355342434dc4ea18c35179b1b76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gameObject: {fileID: 1307533996257544, guid: 1bbf5673fa823844fbe547c13dd80235,
+    type: 2}
+  m_minFloors: 3
+  m_maxFloors: 5
+  m_increment: 1.28
 --- !u!1 &174215457
 GameObject:
   m_ObjectHideFlags: 0
@@ -2056,6 +2209,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 186104377}
+  - component: {fileID: 186104378}
   m_Layer: 0
   m_Name: Immeuble_droite(Clone) (15)
   m_TagString: Untagged
@@ -2078,6 +2232,22 @@ Transform:
   m_Father: {fileID: 882134799}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &186104378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 186104376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b0355342434dc4ea18c35179b1b76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gameObject: {fileID: 1307533996257544, guid: 1bbf5673fa823844fbe547c13dd80235,
+    type: 2}
+  m_minFloors: 3
+  m_maxFloors: 5
+  m_increment: 1.28
 --- !u!1 &192995886
 GameObject:
   m_ObjectHideFlags: 0
@@ -2750,6 +2920,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 224146112}
+  - component: {fileID: 224146113}
   m_Layer: 0
   m_Name: Immeuble_gauche(Clone)
   m_TagString: Untagged
@@ -2772,6 +2943,22 @@ Transform:
   m_Father: {fileID: 1812521201}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &224146113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 224146111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b0355342434dc4ea18c35179b1b76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gameObject: {fileID: 1061662608124294, guid: 8e650e53731ed0e4ba5a3ebeba7b40a9,
+    type: 2}
+  m_minFloors: 3
+  m_maxFloors: 5
+  m_increment: 1.28
 --- !u!1 &225533640
 GameObject:
   m_ObjectHideFlags: 0
@@ -3018,6 +3205,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 250481542}
+  - component: {fileID: 250481543}
   m_Layer: 0
   m_Name: Immeuble_gauche(Clone) (11)
   m_TagString: Untagged
@@ -3040,6 +3228,22 @@ Transform:
   m_Father: {fileID: 1812521201}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &250481543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 250481541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b0355342434dc4ea18c35179b1b76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gameObject: {fileID: 1061662608124294, guid: 8e650e53731ed0e4ba5a3ebeba7b40a9,
+    type: 2}
+  m_minFloors: 3
+  m_maxFloors: 5
+  m_increment: 1.28
 --- !u!1 &256989951
 GameObject:
   m_ObjectHideFlags: 0
@@ -3380,6 +3584,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 278567909}
+  - component: {fileID: 278567910}
   m_Layer: 0
   m_Name: Immeuble_gauche(Clone) (15)
   m_TagString: Untagged
@@ -3402,6 +3607,22 @@ Transform:
   m_Father: {fileID: 1812521201}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &278567910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 278567908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b0355342434dc4ea18c35179b1b76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gameObject: {fileID: 1061662608124294, guid: 8e650e53731ed0e4ba5a3ebeba7b40a9,
+    type: 2}
+  m_minFloors: 3
+  m_maxFloors: 5
+  m_increment: 1.28
 --- !u!1 &292863178
 GameObject:
   m_ObjectHideFlags: 0
@@ -3795,6 +4016,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 312491022}
+  - component: {fileID: 312491023}
   m_Layer: 0
   m_Name: Immeuble_gauche(Clone) (26)
   m_TagString: Untagged
@@ -3817,6 +4039,22 @@ Transform:
   m_Father: {fileID: 1812521201}
   m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &312491023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 312491021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b0355342434dc4ea18c35179b1b76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gameObject: {fileID: 1061662608124294, guid: 8e650e53731ed0e4ba5a3ebeba7b40a9,
+    type: 2}
+  m_minFloors: 3
+  m_maxFloors: 5
+  m_increment: 1.28
 --- !u!1 &314259095
 GameObject:
   m_ObjectHideFlags: 0
@@ -3873,6 +4111,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 314393628}
+  - component: {fileID: 314393629}
   m_Layer: 0
   m_Name: Immeuble_droite(Clone) (4)
   m_TagString: Untagged
@@ -3895,6 +4134,22 @@ Transform:
   m_Father: {fileID: 882134799}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &314393629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 314393627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b0355342434dc4ea18c35179b1b76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gameObject: {fileID: 1307533996257544, guid: 1bbf5673fa823844fbe547c13dd80235,
+    type: 2}
+  m_minFloors: 3
+  m_maxFloors: 5
+  m_increment: 1.28
 --- !u!1 &315813706
 GameObject:
   m_ObjectHideFlags: 0
@@ -4070,6 +4325,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 332511500}
+  - component: {fileID: 332511501}
   m_Layer: 0
   m_Name: Immeuble_droite(Clone) (8)
   m_TagString: Untagged
@@ -4092,6 +4348,22 @@ Transform:
   m_Father: {fileID: 882134799}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &332511501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 332511499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b0355342434dc4ea18c35179b1b76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gameObject: {fileID: 1307533996257544, guid: 1bbf5673fa823844fbe547c13dd80235,
+    type: 2}
+  m_minFloors: 3
+  m_maxFloors: 5
+  m_increment: 1.28
 --- !u!1 &347247093
 GameObject:
   m_ObjectHideFlags: 0
@@ -4574,6 +4846,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 372736822}
+  - component: {fileID: 372736823}
   m_Layer: 0
   m_Name: Immeuble_gauche(Clone) (8)
   m_TagString: Untagged
@@ -4596,6 +4869,22 @@ Transform:
   m_Father: {fileID: 1812521201}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &372736823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 372736821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b0355342434dc4ea18c35179b1b76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gameObject: {fileID: 1061662608124294, guid: 8e650e53731ed0e4ba5a3ebeba7b40a9,
+    type: 2}
+  m_minFloors: 3
+  m_maxFloors: 5
+  m_increment: 1.28
 --- !u!1 &378926616
 GameObject:
   m_ObjectHideFlags: 0
@@ -5149,6 +5438,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 435810588}
+  - component: {fileID: 435810589}
   m_Layer: 0
   m_Name: Immeuble_gauche(Clone) (5)
   m_TagString: Untagged
@@ -5171,6 +5461,22 @@ Transform:
   m_Father: {fileID: 1812521201}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &435810589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 435810587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b0355342434dc4ea18c35179b1b76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gameObject: {fileID: 1061662608124294, guid: 8e650e53731ed0e4ba5a3ebeba7b40a9,
+    type: 2}
+  m_minFloors: 3
+  m_maxFloors: 5
+  m_increment: 1.28
 --- !u!1 &454817624
 GameObject:
   m_ObjectHideFlags: 0
@@ -5892,6 +6198,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 543833144}
+  - component: {fileID: 543833145}
   m_Layer: 0
   m_Name: Immeuble_gauche(Clone) (28)
   m_TagString: Untagged
@@ -5914,6 +6221,22 @@ Transform:
   m_Father: {fileID: 1812521201}
   m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &543833145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 543833143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b0355342434dc4ea18c35179b1b76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gameObject: {fileID: 1061662608124294, guid: 8e650e53731ed0e4ba5a3ebeba7b40a9,
+    type: 2}
+  m_minFloors: 3
+  m_maxFloors: 5
+  m_increment: 1.28
 --- !u!1 &545779102
 GameObject:
   m_ObjectHideFlags: 0
@@ -6183,6 +6506,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 556285546}
+  - component: {fileID: 556285547}
   m_Layer: 0
   m_Name: Immeuble_gauche(Clone) (10)
   m_TagString: Untagged
@@ -6205,6 +6529,22 @@ Transform:
   m_Father: {fileID: 1812521201}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &556285547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 556285545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b0355342434dc4ea18c35179b1b76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gameObject: {fileID: 1061662608124294, guid: 8e650e53731ed0e4ba5a3ebeba7b40a9,
+    type: 2}
+  m_minFloors: 3
+  m_maxFloors: 5
+  m_increment: 1.28
 --- !u!1 &559609786
 GameObject:
   m_ObjectHideFlags: 0
@@ -6481,6 +6821,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 578493824}
+  - component: {fileID: 578493825}
   m_Layer: 0
   m_Name: Immeuble_gauche(Clone) (20)
   m_TagString: Untagged
@@ -6503,6 +6844,22 @@ Transform:
   m_Father: {fileID: 1812521201}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &578493825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 578493823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b0355342434dc4ea18c35179b1b76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gameObject: {fileID: 1061662608124294, guid: 8e650e53731ed0e4ba5a3ebeba7b40a9,
+    type: 2}
+  m_minFloors: 3
+  m_maxFloors: 5
+  m_increment: 1.28
 --- !u!1 &578941979 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1616445315784694, guid: 23b3c50ab610b62459c74a18671864a2,
@@ -6759,6 +7116,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 598120026}
+  - component: {fileID: 598120027}
   m_Layer: 0
   m_Name: Immeuble_gauche(Clone) (17)
   m_TagString: Untagged
@@ -6781,6 +7139,22 @@ Transform:
   m_Father: {fileID: 1812521201}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &598120027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 598120025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b0355342434dc4ea18c35179b1b76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gameObject: {fileID: 1061662608124294, guid: 8e650e53731ed0e4ba5a3ebeba7b40a9,
+    type: 2}
+  m_minFloors: 3
+  m_maxFloors: 5
+  m_increment: 1.28
 --- !u!1 &598609995
 GameObject:
   m_ObjectHideFlags: 0
@@ -6948,52 +7322,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
---- !u!1001 &621530785
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4182711271757696, guid: fa5858b3139fbf04796ae34a666573bb, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 7.874
-      objectReference: {fileID: 0}
-    - target: {fileID: 4182711271757696, guid: fa5858b3139fbf04796ae34a666573bb, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 14.71
-      objectReference: {fileID: 0}
-    - target: {fileID: 4182711271757696, guid: fa5858b3139fbf04796ae34a666573bb, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 69.527
-      objectReference: {fileID: 0}
-    - target: {fileID: 4182711271757696, guid: fa5858b3139fbf04796ae34a666573bb, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4182711271757696, guid: fa5858b3139fbf04796ae34a666573bb, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4182711271757696, guid: fa5858b3139fbf04796ae34a666573bb, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4182711271757696, guid: fa5858b3139fbf04796ae34a666573bb, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4182711271757696, guid: fa5858b3139fbf04796ae34a666573bb, type: 2}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1280852613275332, guid: fa5858b3139fbf04796ae34a666573bb, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: fa5858b3139fbf04796ae34a666573bb, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &621688724
 GameObject:
   m_ObjectHideFlags: 0
@@ -7410,6 +7738,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 673215814}
+  - component: {fileID: 673215815}
   m_Layer: 0
   m_Name: Immeuble_droite(Clone) (21)
   m_TagString: Untagged
@@ -7432,6 +7761,22 @@ Transform:
   m_Father: {fileID: 882134799}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &673215815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 673215813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b0355342434dc4ea18c35179b1b76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gameObject: {fileID: 1307533996257544, guid: 1bbf5673fa823844fbe547c13dd80235,
+    type: 2}
+  m_minFloors: 3
+  m_maxFloors: 5
+  m_increment: 1.28
 --- !u!1 &675074610
 GameObject:
   m_ObjectHideFlags: 0
@@ -7726,6 +8071,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 710688736}
+  - component: {fileID: 710688737}
   m_Layer: 0
   m_Name: Immeuble_gauche(Clone) (1)
   m_TagString: Untagged
@@ -7748,6 +8094,22 @@ Transform:
   m_Father: {fileID: 1812521201}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &710688737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 710688735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b0355342434dc4ea18c35179b1b76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gameObject: {fileID: 1061662608124294, guid: 8e650e53731ed0e4ba5a3ebeba7b40a9,
+    type: 2}
+  m_minFloors: 3
+  m_maxFloors: 5
+  m_increment: 1.28
 --- !u!1 &716955011
 GameObject:
   m_ObjectHideFlags: 0
@@ -7867,27 +8229,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
---- !u!1 &727171729 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1280852613275332, guid: fa5858b3139fbf04796ae34a666573bb,
-    type: 2}
-  m_PrefabInternal: {fileID: 621530785}
---- !u!114 &727171730
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 727171729}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02b0355342434dc4ea18c35179b1b76a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_gameObject: {fileID: 1307533996257544, guid: 1bbf5673fa823844fbe547c13dd80235,
-    type: 2}
-  m_minFloors: 2
-  m_maxFloors: 4
-  m_increment: 1.28
 --- !u!1 &735804605
 GameObject:
   m_ObjectHideFlags: 0
@@ -9799,6 +10140,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 881818007}
+  - component: {fileID: 881818008}
   m_Layer: 0
   m_Name: Immeuble_gauche(Clone) (27)
   m_TagString: Untagged
@@ -9821,6 +10163,22 @@ Transform:
   m_Father: {fileID: 1812521201}
   m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &881818008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 881818006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b0355342434dc4ea18c35179b1b76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gameObject: {fileID: 1061662608124294, guid: 8e650e53731ed0e4ba5a3ebeba7b40a9,
+    type: 2}
+  m_minFloors: 3
+  m_maxFloors: 5
+  m_increment: 1.28
 --- !u!1 &882134798
 GameObject:
   m_ObjectHideFlags: 0
@@ -10121,6 +10479,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 894733010}
+  - component: {fileID: 894733011}
   m_Layer: 0
   m_Name: Immeuble_gauche(Clone) (7)
   m_TagString: Untagged
@@ -10143,6 +10502,22 @@ Transform:
   m_Father: {fileID: 1812521201}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &894733011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 894733009}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b0355342434dc4ea18c35179b1b76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gameObject: {fileID: 1061662608124294, guid: 8e650e53731ed0e4ba5a3ebeba7b40a9,
+    type: 2}
+  m_minFloors: 3
+  m_maxFloors: 5
+  m_increment: 1.28
 --- !u!1 &903401390 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1957131801717788, guid: 869edda08e2ec2a4c8097b3b613cff93,
@@ -10340,6 +10715,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 914834062}
+  - component: {fileID: 914834063}
   m_Layer: 0
   m_Name: Immeuble_droite(Clone) (12)
   m_TagString: Untagged
@@ -10362,6 +10738,22 @@ Transform:
   m_Father: {fileID: 882134799}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &914834063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 914834061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b0355342434dc4ea18c35179b1b76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gameObject: {fileID: 1307533996257544, guid: 1bbf5673fa823844fbe547c13dd80235,
+    type: 2}
+  m_minFloors: 3
+  m_maxFloors: 5
+  m_increment: 1.28
 --- !u!1 &929894523
 GameObject:
   m_ObjectHideFlags: 0
@@ -12259,6 +12651,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1053641485}
+  - component: {fileID: 1053641486}
   m_Layer: 0
   m_Name: Immeuble_droite(Clone) (14)
   m_TagString: Untagged
@@ -12281,6 +12674,22 @@ Transform:
   m_Father: {fileID: 882134799}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1053641486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1053641484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b0355342434dc4ea18c35179b1b76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gameObject: {fileID: 1307533996257544, guid: 1bbf5673fa823844fbe547c13dd80235,
+    type: 2}
+  m_minFloors: 3
+  m_maxFloors: 5
+  m_increment: 1.28
 --- !u!1 &1059357111
 GameObject:
   m_ObjectHideFlags: 0
@@ -12663,6 +13072,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1089682455}
+  - component: {fileID: 1089682456}
   m_Layer: 0
   m_Name: Immeuble_droite(Clone) (5)
   m_TagString: Untagged
@@ -12685,6 +13095,22 @@ Transform:
   m_Father: {fileID: 882134799}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1089682456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1089682454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b0355342434dc4ea18c35179b1b76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gameObject: {fileID: 1307533996257544, guid: 1bbf5673fa823844fbe547c13dd80235,
+    type: 2}
+  m_minFloors: 3
+  m_maxFloors: 5
+  m_increment: 1.28
 --- !u!1 &1096160379
 GameObject:
   m_ObjectHideFlags: 0
@@ -13286,6 +13712,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1133093143}
+  - component: {fileID: 1133093144}
   m_Layer: 0
   m_Name: Immeuble_gauche(Clone) (16)
   m_TagString: Untagged
@@ -13308,6 +13735,22 @@ Transform:
   m_Father: {fileID: 1812521201}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1133093144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1133093142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b0355342434dc4ea18c35179b1b76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gameObject: {fileID: 1061662608124294, guid: 8e650e53731ed0e4ba5a3ebeba7b40a9,
+    type: 2}
+  m_minFloors: 3
+  m_maxFloors: 5
+  m_increment: 1.28
 --- !u!1 &1133202169
 GameObject:
   m_ObjectHideFlags: 0
@@ -13516,6 +13959,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1139338953}
+  - component: {fileID: 1139338954}
   m_Layer: 0
   m_Name: Immeuble_droite(Clone) (25)
   m_TagString: Untagged
@@ -13538,6 +13982,22 @@ Transform:
   m_Father: {fileID: 882134799}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1139338954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1139338952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b0355342434dc4ea18c35179b1b76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gameObject: {fileID: 1307533996257544, guid: 1bbf5673fa823844fbe547c13dd80235,
+    type: 2}
+  m_minFloors: 3
+  m_maxFloors: 5
+  m_increment: 1.28
 --- !u!1 &1140530320
 GameObject:
   m_ObjectHideFlags: 0
@@ -14392,6 +14852,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1214808174}
+  - component: {fileID: 1214808175}
   m_Layer: 0
   m_Name: Immeuble_gauche(Clone) (6)
   m_TagString: Untagged
@@ -14414,6 +14875,22 @@ Transform:
   m_Father: {fileID: 1812521201}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1214808175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1214808173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b0355342434dc4ea18c35179b1b76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gameObject: {fileID: 1061662608124294, guid: 8e650e53731ed0e4ba5a3ebeba7b40a9,
+    type: 2}
+  m_minFloors: 3
+  m_maxFloors: 5
+  m_increment: 1.28
 --- !u!1 &1218147737
 GameObject:
   m_ObjectHideFlags: 0
@@ -14872,6 +15349,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1279093417}
+  - component: {fileID: 1279093418}
   m_Layer: 0
   m_Name: Immeuble_gauche(Clone) (25)
   m_TagString: Untagged
@@ -14894,6 +15372,22 @@ Transform:
   m_Father: {fileID: 1812521201}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1279093418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1279093416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b0355342434dc4ea18c35179b1b76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gameObject: {fileID: 1061662608124294, guid: 8e650e53731ed0e4ba5a3ebeba7b40a9,
+    type: 2}
+  m_minFloors: 3
+  m_maxFloors: 5
+  m_increment: 1.28
 --- !u!1 &1281390390
 GameObject:
   m_ObjectHideFlags: 0
@@ -15424,6 +15918,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1309026677}
+  - component: {fileID: 1309026678}
   m_Layer: 0
   m_Name: Immeuble_droite(Clone) (3)
   m_TagString: Untagged
@@ -15446,6 +15941,22 @@ Transform:
   m_Father: {fileID: 882134799}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1309026678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1309026676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b0355342434dc4ea18c35179b1b76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gameObject: {fileID: 1307533996257544, guid: 1bbf5673fa823844fbe547c13dd80235,
+    type: 2}
+  m_minFloors: 3
+  m_maxFloors: 5
+  m_increment: 1.28
 --- !u!1 &1314797818
 GameObject:
   m_ObjectHideFlags: 0
@@ -15454,6 +15965,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1314797819}
+  - component: {fileID: 1314797820}
   m_Layer: 0
   m_Name: Immeuble_gauche(Clone) (3)
   m_TagString: Untagged
@@ -15476,6 +15988,22 @@ Transform:
   m_Father: {fileID: 1812521201}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1314797820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1314797818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b0355342434dc4ea18c35179b1b76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gameObject: {fileID: 1061662608124294, guid: 8e650e53731ed0e4ba5a3ebeba7b40a9,
+    type: 2}
+  m_minFloors: 3
+  m_maxFloors: 5
+  m_increment: 1.28
 --- !u!1 &1316534279
 GameObject:
   m_ObjectHideFlags: 0
@@ -16267,6 +16795,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1384163840}
+  - component: {fileID: 1384163841}
   m_Layer: 0
   m_Name: Immeuble_gauche(Clone) (4)
   m_TagString: Untagged
@@ -16289,6 +16818,22 @@ Transform:
   m_Father: {fileID: 1812521201}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1384163841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1384163839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b0355342434dc4ea18c35179b1b76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gameObject: {fileID: 1061662608124294, guid: 8e650e53731ed0e4ba5a3ebeba7b40a9,
+    type: 2}
+  m_minFloors: 3
+  m_maxFloors: 5
+  m_increment: 1.28
 --- !u!1 &1412337181
 GameObject:
   m_ObjectHideFlags: 0
@@ -16345,6 +16890,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1413521060}
+  - component: {fileID: 1413521061}
   m_Layer: 0
   m_Name: Immeuble_droite(Clone) (2)
   m_TagString: Untagged
@@ -16367,6 +16913,22 @@ Transform:
   m_Father: {fileID: 882134799}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1413521061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1413521059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b0355342434dc4ea18c35179b1b76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gameObject: {fileID: 1307533996257544, guid: 1bbf5673fa823844fbe547c13dd80235,
+    type: 2}
+  m_minFloors: 3
+  m_maxFloors: 5
+  m_increment: 1.28
 --- !u!1 &1417302244
 GameObject:
   m_ObjectHideFlags: 0
@@ -16993,6 +17555,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1487941190}
+  - component: {fileID: 1487941191}
   m_Layer: 0
   m_Name: Immeuble_gauche(Clone) (23)
   m_TagString: Untagged
@@ -17015,6 +17578,22 @@ Transform:
   m_Father: {fileID: 1812521201}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1487941191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1487941189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b0355342434dc4ea18c35179b1b76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gameObject: {fileID: 1061662608124294, guid: 8e650e53731ed0e4ba5a3ebeba7b40a9,
+    type: 2}
+  m_minFloors: 3
+  m_maxFloors: 5
+  m_increment: 1.28
 --- !u!1 &1494665699
 GameObject:
   m_ObjectHideFlags: 0
@@ -17598,6 +18177,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1536341717}
+  - component: {fileID: 1536341718}
   m_Layer: 0
   m_Name: Immeuble_gauche(Clone) (19)
   m_TagString: Untagged
@@ -17620,6 +18200,22 @@ Transform:
   m_Father: {fileID: 1812521201}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1536341718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1536341716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b0355342434dc4ea18c35179b1b76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gameObject: {fileID: 1061662608124294, guid: 8e650e53731ed0e4ba5a3ebeba7b40a9,
+    type: 2}
+  m_minFloors: 3
+  m_maxFloors: 5
+  m_increment: 1.28
 --- !u!1 &1537075938
 GameObject:
   m_ObjectHideFlags: 0
@@ -17628,6 +18224,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1537075939}
+  - component: {fileID: 1537075940}
   m_Layer: 0
   m_Name: Immeuble_gauche(Clone) (24)
   m_TagString: Untagged
@@ -17650,6 +18247,22 @@ Transform:
   m_Father: {fileID: 1812521201}
   m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1537075940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1537075938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b0355342434dc4ea18c35179b1b76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gameObject: {fileID: 1061662608124294, guid: 8e650e53731ed0e4ba5a3ebeba7b40a9,
+    type: 2}
+  m_minFloors: 3
+  m_maxFloors: 5
+  m_increment: 1.28
 --- !u!1 &1541310168
 GameObject:
   m_ObjectHideFlags: 0
@@ -18441,6 +19054,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1604979828}
+  - component: {fileID: 1604979829}
   m_Layer: 0
   m_Name: Immeuble_droite(Clone) (17)
   m_TagString: Untagged
@@ -18463,6 +19077,22 @@ Transform:
   m_Father: {fileID: 882134799}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1604979829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1604979827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b0355342434dc4ea18c35179b1b76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gameObject: {fileID: 1307533996257544, guid: 1bbf5673fa823844fbe547c13dd80235,
+    type: 2}
+  m_minFloors: 3
+  m_maxFloors: 5
+  m_increment: 1.28
 --- !u!1 &1607248484
 GameObject:
   m_ObjectHideFlags: 0
@@ -18732,6 +19362,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1620551832}
+  - component: {fileID: 1620551833}
   m_Layer: 0
   m_Name: Immeuble_droite(Clone) (9)
   m_TagString: Untagged
@@ -18754,6 +19385,22 @@ Transform:
   m_Father: {fileID: 882134799}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1620551833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1620551831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b0355342434dc4ea18c35179b1b76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gameObject: {fileID: 1307533996257544, guid: 1bbf5673fa823844fbe547c13dd80235,
+    type: 2}
+  m_minFloors: 3
+  m_maxFloors: 5
+  m_increment: 1.28
 --- !u!1 &1625151438
 GameObject:
   m_ObjectHideFlags: 0
@@ -19494,77 +20141,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
---- !u!1001 &1658237770
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4182711271757696, guid: fa5858b3139fbf04796ae34a666573bb, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 7.512
-      objectReference: {fileID: 0}
-    - target: {fileID: 4182711271757696, guid: fa5858b3139fbf04796ae34a666573bb, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 14.71
-      objectReference: {fileID: 0}
-    - target: {fileID: 4182711271757696, guid: fa5858b3139fbf04796ae34a666573bb, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 70.949
-      objectReference: {fileID: 0}
-    - target: {fileID: 4182711271757696, guid: fa5858b3139fbf04796ae34a666573bb, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4182711271757696, guid: fa5858b3139fbf04796ae34a666573bb, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4182711271757696, guid: fa5858b3139fbf04796ae34a666573bb, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4182711271757696, guid: fa5858b3139fbf04796ae34a666573bb, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4182711271757696, guid: fa5858b3139fbf04796ae34a666573bb, type: 2}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1280852613275332, guid: fa5858b3139fbf04796ae34a666573bb, type: 2}
-      propertyPath: m_Name
-      value: Immeuble_droite (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 1280852613275332, guid: fa5858b3139fbf04796ae34a666573bb, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: fa5858b3139fbf04796ae34a666573bb, type: 2}
-  m_IsPrefabParent: 0
---- !u!1 &1658237771 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1280852613275332, guid: fa5858b3139fbf04796ae34a666573bb,
-    type: 2}
-  m_PrefabInternal: {fileID: 1658237770}
---- !u!114 &1658237772
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1658237771}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02b0355342434dc4ea18c35179b1b76a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_gameObject: {fileID: 1307533996257544, guid: 1bbf5673fa823844fbe547c13dd80235,
-    type: 2}
-  m_minFloors: 2
-  m_maxFloors: 4
-  m_increment: 1.28
 --- !u!1 &1661333474
 GameObject:
   m_ObjectHideFlags: 0
@@ -19715,6 +20291,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1666691707}
+  - component: {fileID: 1666691708}
   m_Layer: 0
   m_Name: Immeuble_droite(Clone) (23)
   m_TagString: Untagged
@@ -19737,6 +20314,22 @@ Transform:
   m_Father: {fileID: 882134799}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1666691708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1666691706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b0355342434dc4ea18c35179b1b76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gameObject: {fileID: 1307533996257544, guid: 1bbf5673fa823844fbe547c13dd80235,
+    type: 2}
+  m_minFloors: 3
+  m_maxFloors: 5
+  m_increment: 1.28
 --- !u!1 &1666751921
 GameObject:
   m_ObjectHideFlags: 0
@@ -19745,6 +20338,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1666751922}
+  - component: {fileID: 1666751923}
   m_Layer: 0
   m_Name: Immeuble_droite(Clone) (26)
   m_TagString: Untagged
@@ -19767,6 +20361,22 @@ Transform:
   m_Father: {fileID: 882134799}
   m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1666751923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1666751921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b0355342434dc4ea18c35179b1b76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gameObject: {fileID: 1307533996257544, guid: 1bbf5673fa823844fbe547c13dd80235,
+    type: 2}
+  m_minFloors: 3
+  m_maxFloors: 5
+  m_increment: 1.28
 --- !u!1 &1695783991
 GameObject:
   m_ObjectHideFlags: 0
@@ -19926,6 +20536,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1706300572}
+  - component: {fileID: 1706300573}
   m_Layer: 0
   m_Name: Immeuble_droite(Clone) (11)
   m_TagString: Untagged
@@ -19948,6 +20559,22 @@ Transform:
   m_Father: {fileID: 882134799}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1706300573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1706300571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b0355342434dc4ea18c35179b1b76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gameObject: {fileID: 1307533996257544, guid: 1bbf5673fa823844fbe547c13dd80235,
+    type: 2}
+  m_minFloors: 3
+  m_maxFloors: 5
+  m_increment: 1.28
 --- !u!1 &1710656674
 GameObject:
   m_ObjectHideFlags: 0
@@ -20668,6 +21295,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1772795301}
+  - component: {fileID: 1772795302}
   m_Layer: 0
   m_Name: Immeuble_droite(Clone) (6)
   m_TagString: Untagged
@@ -20690,6 +21318,22 @@ Transform:
   m_Father: {fileID: 882134799}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1772795302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1772795300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b0355342434dc4ea18c35179b1b76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gameObject: {fileID: 1307533996257544, guid: 1bbf5673fa823844fbe547c13dd80235,
+    type: 2}
+  m_minFloors: 3
+  m_maxFloors: 5
+  m_increment: 1.28
 --- !u!1 &1773189053
 GameObject:
   m_ObjectHideFlags: 0
@@ -21134,6 +21778,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1803256040}
+  - component: {fileID: 1803256041}
   m_Layer: 0
   m_Name: Immeuble_gauche(Clone) (9)
   m_TagString: Untagged
@@ -21156,6 +21801,22 @@ Transform:
   m_Father: {fileID: 1812521201}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1803256041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1803256039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b0355342434dc4ea18c35179b1b76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gameObject: {fileID: 1061662608124294, guid: 8e650e53731ed0e4ba5a3ebeba7b40a9,
+    type: 2}
+  m_minFloors: 3
+  m_maxFloors: 5
+  m_increment: 1.28
 --- !u!1 &1812521200
 GameObject:
   m_ObjectHideFlags: 0
@@ -21599,6 +22260,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1838836566}
+  - component: {fileID: 1838836567}
   m_Layer: 0
   m_Name: Immeuble_droite(Clone) (20)
   m_TagString: Untagged
@@ -21621,6 +22283,22 @@ Transform:
   m_Father: {fileID: 882134799}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1838836567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1838836565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b0355342434dc4ea18c35179b1b76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gameObject: {fileID: 1307533996257544, guid: 1bbf5673fa823844fbe547c13dd80235,
+    type: 2}
+  m_minFloors: 3
+  m_maxFloors: 5
+  m_increment: 1.28
 --- !u!1 &1850907990
 GameObject:
   m_ObjectHideFlags: 0
@@ -22028,6 +22706,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1881650708}
+  - component: {fileID: 1881650709}
   m_Layer: 0
   m_Name: Immeuble_gauche(Clone) (18)
   m_TagString: Untagged
@@ -22050,6 +22729,22 @@ Transform:
   m_Father: {fileID: 1812521201}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1881650709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1881650707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b0355342434dc4ea18c35179b1b76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gameObject: {fileID: 1061662608124294, guid: 8e650e53731ed0e4ba5a3ebeba7b40a9,
+    type: 2}
+  m_minFloors: 3
+  m_maxFloors: 5
+  m_increment: 1.28
 --- !u!1 &1888672729
 GameObject:
   m_ObjectHideFlags: 0
@@ -22699,6 +23394,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1950366909}
+  - component: {fileID: 1950366910}
   m_Layer: 0
   m_Name: Immeuble_droite(Clone) (27)
   m_TagString: Untagged
@@ -22721,6 +23417,22 @@ Transform:
   m_Father: {fileID: 882134799}
   m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1950366910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1950366908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b0355342434dc4ea18c35179b1b76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gameObject: {fileID: 1307533996257544, guid: 1bbf5673fa823844fbe547c13dd80235,
+    type: 2}
+  m_minFloors: 3
+  m_maxFloors: 5
+  m_increment: 1.28
 --- !u!1 &1950450408
 GameObject:
   m_ObjectHideFlags: 0
@@ -22990,6 +23702,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1974677672}
+  - component: {fileID: 1974677673}
   m_Layer: 0
   m_Name: Immeuble_droite(Clone) (7)
   m_TagString: Untagged
@@ -23012,6 +23725,22 @@ Transform:
   m_Father: {fileID: 882134799}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1974677673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1974677671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b0355342434dc4ea18c35179b1b76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gameObject: {fileID: 1307533996257544, guid: 1bbf5673fa823844fbe547c13dd80235,
+    type: 2}
+  m_minFloors: 3
+  m_maxFloors: 5
+  m_increment: 1.28
 --- !u!1 &1977165392
 GameObject:
   m_ObjectHideFlags: 0
@@ -23306,6 +24035,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 2012497506}
+  - component: {fileID: 2012497507}
   m_Layer: 0
   m_Name: Immeuble_droite(Clone) (19)
   m_TagString: Untagged
@@ -23328,6 +24058,22 @@ Transform:
   m_Father: {fileID: 882134799}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2012497507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2012497505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b0355342434dc4ea18c35179b1b76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gameObject: {fileID: 1307533996257544, guid: 1bbf5673fa823844fbe547c13dd80235,
+    type: 2}
+  m_minFloors: 3
+  m_maxFloors: 5
+  m_increment: 1.28
 --- !u!1 &2031064380
 GameObject:
   m_ObjectHideFlags: 0
@@ -23336,6 +24082,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 2031064381}
+  - component: {fileID: 2031064382}
   m_Layer: 0
   m_Name: Immeuble_droite(Clone) (16)
   m_TagString: Untagged
@@ -23358,6 +24105,22 @@ Transform:
   m_Father: {fileID: 882134799}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2031064382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2031064380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b0355342434dc4ea18c35179b1b76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gameObject: {fileID: 1307533996257544, guid: 1bbf5673fa823844fbe547c13dd80235,
+    type: 2}
+  m_minFloors: 3
+  m_maxFloors: 5
+  m_increment: 1.28
 --- !u!1 &2031751602
 GameObject:
   m_ObjectHideFlags: 0
@@ -23366,6 +24129,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 2031751603}
+  - component: {fileID: 2031751604}
   m_Layer: 0
   m_Name: Immeuble_droite(Clone) (13)
   m_TagString: Untagged
@@ -23388,6 +24152,22 @@ Transform:
   m_Father: {fileID: 882134799}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2031751604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2031751602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b0355342434dc4ea18c35179b1b76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gameObject: {fileID: 1307533996257544, guid: 1bbf5673fa823844fbe547c13dd80235,
+    type: 2}
+  m_minFloors: 3
+  m_maxFloors: 5
+  m_increment: 1.28
 --- !u!1 &2034280741
 GameObject:
   m_ObjectHideFlags: 0
@@ -23538,6 +24318,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 2041118625}
+  - component: {fileID: 2041118626}
   m_Layer: 0
   m_Name: Immeuble_gauche(Clone) (12)
   m_TagString: Untagged
@@ -23560,6 +24341,22 @@ Transform:
   m_Father: {fileID: 1812521201}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2041118626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2041118624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b0355342434dc4ea18c35179b1b76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gameObject: {fileID: 1061662608124294, guid: 8e650e53731ed0e4ba5a3ebeba7b40a9,
+    type: 2}
+  m_minFloors: 3
+  m_maxFloors: 5
+  m_increment: 1.28
 --- !u!1 &2041226655
 GameObject:
   m_ObjectHideFlags: 0
@@ -24161,6 +24958,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 2096918511}
+  - component: {fileID: 2096918512}
   m_Layer: 0
   m_Name: Immeuble_gauche(Clone) (21)
   m_TagString: Untagged
@@ -24183,6 +24981,22 @@ Transform:
   m_Father: {fileID: 1812521201}
   m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2096918512
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2096918510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b0355342434dc4ea18c35179b1b76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gameObject: {fileID: 1061662608124294, guid: 8e650e53731ed0e4ba5a3ebeba7b40a9,
+    type: 2}
+  m_minFloors: 3
+  m_maxFloors: 5
+  m_increment: 1.28
 --- !u!1 &2108525558
 GameObject:
   m_ObjectHideFlags: 0
@@ -24477,6 +25291,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 2117879820}
+  - component: {fileID: 2117879821}
   m_Layer: 0
   m_Name: Immeuble_droite(Clone) (10)
   m_TagString: Untagged
@@ -24499,6 +25314,22 @@ Transform:
   m_Father: {fileID: 882134799}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2117879821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2117879819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b0355342434dc4ea18c35179b1b76a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_gameObject: {fileID: 1307533996257544, guid: 1bbf5673fa823844fbe547c13dd80235,
+    type: 2}
+  m_minFloors: 3
+  m_maxFloors: 5
+  m_increment: 1.28
 --- !u!1 &2121669131
 GameObject:
   m_ObjectHideFlags: 0
