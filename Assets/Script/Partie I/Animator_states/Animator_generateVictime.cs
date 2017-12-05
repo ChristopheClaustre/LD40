@@ -9,7 +9,8 @@ public class Animator_generateVictime : StateMachineBehaviour {
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         animator.gameObject.GetComponent<ONEPartieIManager>().generateVictime();
-        //TODO Init animator parameteres
+        
+        //Init animator parameteres
         animator.SetBool("isAnswered", false);
         animator.SetBool("isReadyForPart2", false);
         animator.SetInteger("Round", animator.gameObject.GetComponent<ONEPartieIManager>().CurrentRound.m_numberOfQuestions);

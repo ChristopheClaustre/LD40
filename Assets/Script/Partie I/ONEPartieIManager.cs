@@ -18,6 +18,7 @@ public class ONEPartieIManager :
 
     /********  PUBLIC           ************************/
 
+    [System.Serializable]
     public class Round
     {
         [SerializeField] public int m_numberOfStrikes = 3;
@@ -122,6 +123,7 @@ public class ONEPartieIManager :
 
     /********  PRIVATE          ************************/
 
+    [SerializeField] private List<Round> m_rounds = new List<Round>();
     [SerializeField] private Round m_currentRound = new Round();
     [SerializeField] private int m_numeroDeRound = 0; // << ébriété ??
 
@@ -184,7 +186,10 @@ public class ONEPartieIManager :
         //Generate a victime reset round variable
         isPlayerPlayed = false;
         isPlayerWin = false;
-        m_currentRound = new Round();
+        //m_currentRound = new Round();
+        m_currentRound = m_rounds[Mathf.Min(m_numeroDeRound, m_rounds.Count - 1)];
+        m_currentRound.m_remainingStrikes = m_currentRound.m_numberOfStrikes;
+        m_currentRound.m_remainingQuestions = m_currentRound.m_numberOfQuestions;
     }
 
     public void startAConversation()
@@ -194,7 +199,7 @@ public class ONEPartieIManager :
 
     public void goPartie2()
     {
-        //Active scene partie II (with parameters ?)
+        //Active scene partie II (with parameters ?) << TODO
     }
 
     public void victimeLeave()
@@ -222,7 +227,6 @@ public class ONEPartieIManager :
     /********  PROTECTED        ************************/
 
     /********  PRIVATE          ************************/
-
 
     #endregion
 }

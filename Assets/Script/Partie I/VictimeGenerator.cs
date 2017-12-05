@@ -75,6 +75,7 @@ public class VictimeGenerator :
         newVictime.VitesseBubble = m_vitesseBubble;
         newVictime.MaxDiscution = m_maxRound;
         newVictime.MaxBubble = m_maxSentence;
+        // TODO
         //newVictime.transform.Find("Hat").gameObject.GetComponent<SpriteRenderer>().sprite = newVictime.m_hat.clothesImage;
         //newVictime.transform.Find("Top").gameObject.GetComponent<SpriteRenderer>().sprite = newVictime.m_top.clothesImage;
 
