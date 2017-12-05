@@ -161,6 +161,17 @@ public class ONEGameState :
         UpdateThings();
 
         AccelerateGenerator();
+
+        if (m_passengerFearState > m_maxPassengerFearState)
+        {
+            // DEFEAT
+            GetComponent<Animator>().enabled = true;
+        }
+        else if (m_currentDistance > m_maxDistance)
+        {
+            // VICTORY
+            GetComponent<Animator>().enabled = true;
+        }
     }
 
     /********  OUR MESSAGES     ************************/
