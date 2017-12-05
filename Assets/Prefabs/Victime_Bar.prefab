@@ -82,7 +82,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1611131404559372}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.2, y: 2.3, z: 0}
+  m_LocalPosition: {x: -0.15, y: 2.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4630332390800408}
@@ -95,7 +95,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1894230737410856}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.1, y: 2.1, z: 0}
+  m_LocalPosition: {x: -0.4, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4630332390800408}
@@ -122,7 +122,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1543367351527860}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.2, y: 0.1, z: 0}
+  m_LocalPosition: {x: -1.5, y: 0.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4031768598015660}
@@ -147,6 +147,20 @@ MonoBehaviour:
   m_maxDiscution: 0
   m_maxBubble: 0
   m_bubble: {fileID: 1912568864280150, guid: e9a80a69c3b682f428272f93955db325, type: 2}
+  m_hat:
+    themeName: 
+    themeImage: {fileID: 0}
+    clothesImage: {fileID: 0}
+    isThemeNormal: 0
+    isThemeFear: 0
+    typeOfClothes: 0
+  m_top:
+    themeName: 
+    themeImage: {fileID: 0}
+    clothesImage: {fileID: 0}
+    isThemeNormal: 0
+    isThemeFear: 0
+    typeOfClothes: 0
 --- !u!212 &212161077114142292
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -179,15 +193,15 @@ SpriteRenderer:
   m_SortingLayerID: -1011169155
   m_SortingLayer: -1
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300002, guid: 49303320303019a4fafbb5e329270ad2, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.5, y: 2}
+  m_Size: {x: 0.9, y: 2.1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!212 &212843429870919940
 SpriteRenderer:
@@ -202,7 +216,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 84dabc08fc154174bbd6a34a77185eee, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -226,7 +240,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.18, y: 0.25}
+  m_Size: {x: 1.4, y: 2.5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -263,13 +277,13 @@ SpriteRenderer:
   m_SortingLayerID: -1011169155
   m_SortingLayer: -1
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300006, guid: 49303320303019a4fafbb5e329270ad2, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.08, y: 0.04}
+  m_Size: {x: 0.07, y: 0.06}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0

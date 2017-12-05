@@ -56,47 +56,47 @@ MonoBehaviour:
     themeImage: {fileID: 21300008, guid: e1e1dca25d61fbe4faa4578fb2085cdb, type: 3}
     clothesImage: {fileID: 0}
     isThemeNormal: 1
-    isThemeFear: 0
+    isThemeFear: 1
     typeOfClothes: 0
   - themeName: Death
     themeImage: {fileID: 21300000, guid: e1e1dca25d61fbe4faa4578fb2085cdb, type: 3}
-    clothesImage: {fileID: 0}
+    clothesImage: {fileID: 21300008, guid: 453e9d227250e1c4d8268cdacb4b0499, type: 3}
+    isThemeNormal: 1
+    isThemeFear: 1
+    typeOfClothes: 1
+  - themeName: Car
+    themeImage: {fileID: 21300002, guid: e1e1dca25d61fbe4faa4578fb2085cdb, type: 3}
+    clothesImage: {fileID: 21300002, guid: 453e9d227250e1c4d8268cdacb4b0499, type: 3}
     isThemeNormal: 1
     isThemeFear: 1
     typeOfClothes: 0
-  - themeName: Car
-    themeImage: {fileID: 21300002, guid: e1e1dca25d61fbe4faa4578fb2085cdb, type: 3}
-    clothesImage: {fileID: 0}
-    isThemeNormal: 1
-    isThemeFear: 0
-    typeOfClothes: 0
   - themeName: Nature
     themeImage: {fileID: 21300004, guid: e1e1dca25d61fbe4faa4578fb2085cdb, type: 3}
-    clothesImage: {fileID: 0}
+    clothesImage: {fileID: 21300004, guid: 453e9d227250e1c4d8268cdacb4b0499, type: 3}
     isThemeNormal: 1
     isThemeFear: 0
     typeOfClothes: 0
   - themeName: Butterfly
     themeImage: {fileID: 21300006, guid: e1e1dca25d61fbe4faa4578fb2085cdb, type: 3}
-    clothesImage: {fileID: 0}
+    clothesImage: {fileID: 21300010, guid: 453e9d227250e1c4d8268cdacb4b0499, type: 3}
     isThemeNormal: 1
     isThemeFear: 0
-    typeOfClothes: 0
+    typeOfClothes: 1
   - themeName: NBomb
     themeImage: {fileID: 21300010, guid: e1e1dca25d61fbe4faa4578fb2085cdb, type: 3}
-    clothesImage: {fileID: 0}
+    clothesImage: {fileID: 21300000, guid: 453e9d227250e1c4d8268cdacb4b0499, type: 3}
     isThemeNormal: 1
     isThemeFear: 0
     typeOfClothes: 0
   - themeName: Trip
     themeImage: {fileID: 21300014, guid: e1e1dca25d61fbe4faa4578fb2085cdb, type: 3}
-    clothesImage: {fileID: 0}
+    clothesImage: {fileID: 21300006, guid: 453e9d227250e1c4d8268cdacb4b0499, type: 3}
     isThemeNormal: 1
     isThemeFear: 0
     typeOfClothes: 0
   - themeName: Sock
     themeImage: {fileID: 21300016, guid: e1e1dca25d61fbe4faa4578fb2085cdb, type: 3}
-    clothesImage: {fileID: 0}
+    clothesImage: {fileID: 21300012, guid: 453e9d227250e1c4d8268cdacb4b0499, type: 3}
     isThemeNormal: 1
     isThemeFear: 0
-    typeOfClothes: 0
+    typeOfClothes: 1
