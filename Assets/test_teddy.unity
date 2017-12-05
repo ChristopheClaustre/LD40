@@ -5962,6 +5962,8 @@ MonoBehaviour:
   - {fileID: 1280852613275332, guid: fa5858b3139fbf04796ae34a666573bb, type: 2}
   m_ecartMin: 1.2
   m_ecartMax: 2
+  m_decalageMaxDueToDifficulty: 0
+  m_difficultyCoeff: 0
   m_generatedDecors: []
 --- !u!1 &883279098
 GameObject:
@@ -7882,6 +7884,8 @@ MonoBehaviour:
   - {fileID: 1170706946032572, guid: 410c3adeec3780140b8137b117643232, type: 2}
   m_ecartMin: 10
   m_ecartMax: 14
+  m_decalageMaxDueToDifficulty: 0
+  m_difficultyCoeff: 0
   m_generatedDecors: []
 --- !u!1 &1076942103
 GameObject:
@@ -10366,13 +10370,13 @@ MonoBehaviour:
   m_passengerFearState: 0
   m_maxDistance: 2000
   m_vitesse: 10
-  m_dirtyState: 0
   m_maxPassengerFearState: 50
   m_vitesseDescenteFear: 5
   m_maxVitesseVoiture: 1.5
   m_leftRoadDescenteFearFactor: 0.5
   m_outOfRoadDescenteFearFactor: 0
   m_lags: 0.3
+  m_generatorToAccelerate: {fileID: 0}
 --- !u!4 &1351786076
 Transform:
   m_ObjectHideFlags: 0
@@ -13237,6 +13241,8 @@ MonoBehaviour:
   - {fileID: 1409523170010376, guid: 4b02e7b00b54ce84aaa4d2b9f47bf1ee, type: 2}
   m_ecartMin: 1.2
   m_ecartMax: 2
+  m_decalageMaxDueToDifficulty: 0
+  m_difficultyCoeff: 0
   m_generatedDecors: []
 --- !u!1 &1844839373
 GameObject:
