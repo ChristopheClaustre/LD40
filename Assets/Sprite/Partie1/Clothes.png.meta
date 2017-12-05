@@ -1,11 +1,16 @@
 fileFormatVersion: 2
-guid: 59a590a26d088074896928fbe8ddcf0c
-timeCreated: 1512428985
+guid: 453e9d227250e1c4d8268cdacb4b0499
+timeCreated: 1512434359
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Pub_Char_Victim
-    21300002: Pub_Char_Player
+    21300000: Clothes_SKHelm
+    21300002: Clothes_MotoHelm
+    21300004: Clothes_FlwrCrwn
+    21300006: Clothes_Tuba
+    21300008: Clothes_VmpreCape
+    21300010: Clothes_BttrFly
+    21300012: Clothes_FlthHoody
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -44,7 +49,7 @@ TextureImporter:
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 7
+  alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 10
@@ -101,29 +106,99 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pub_Char_Victim
+      name: Clothes_SKHelm
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 14
-        height: 25
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        y: 22
+        width: 7
+        height: 6
+      alignment: 9
+      pivot: {x: 0.36, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: Pub_Char_Player
+      name: Clothes_MotoHelm
       rect:
         serializedVersion: 2
-        x: 14
+        x: 8
+        y: 22
+        width: 7
+        height: 6
+      alignment: 9
+      pivot: {x: 0.36, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Clothes_FlwrCrwn
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 23
+        width: 7
+        height: 5
+      alignment: 9
+      pivot: {x: 0.36, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Clothes_Tuba
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 21
+        width: 7
+        height: 8
+      alignment: 9
+      pivot: {x: 0.36, y: 0.375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Clothes_VmpreCape
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 0
-        width: 14
-        height: 25
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 9
+        height: 21
+      alignment: 9
+      pivot: {x: 0.45, y: 0.858}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Clothes_BttrFly
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1
+        width: 12
+        height: 20
+      alignment: 9
+      pivot: {x: 1, y: 0.75}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Clothes_FlthHoody
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 6
+        width: 17
+        height: 14
+      alignment: 9
+      pivot: {x: 0.41, y: 0.785}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
