@@ -109,7 +109,6 @@ public class ONEBubbleTheme :
     {
         List<Theme> normalThemeList = m_themes.FindAll(findNormalTheme);
         return normalThemeList[UnityEngine.Random.Range(0, normalThemeList.Count)];
-
     }
 
     public Theme getRandomShoutTheme()
@@ -130,12 +129,6 @@ public class ONEBubbleTheme :
         return topThemeList[UnityEngine.Random.Range(0, topThemeList.Count)];
     }
 
-    public Theme getRandomBottomTheme()
-    {
-        List<Theme> bottomThemeList = m_themes.FindAll(findBottomTheme);
-        return bottomThemeList[UnityEngine.Random.Range(0, bottomThemeList.Count)];
-    }
-
     /********  PROTECTED        ************************/
 
     /********  PRIVATE          ************************/
@@ -152,17 +145,12 @@ public class ONEBubbleTheme :
 
     private bool findHatTheme(Theme p_theme)
     {
-        return (p_theme.typeOfClothes == typeClothers.eHat);
+        return (p_theme.themeName != "Alcool" && p_theme.typeOfClothes == typeClothers.eHat);
     }
 
     private bool findTopTheme(Theme p_theme)
     {
-        return (p_theme.typeOfClothes == typeClothers.eTop);
-    }
-
-    private bool findBottomTheme(Theme p_theme)
-    {
-        return (p_theme.typeOfClothes == typeClothers.eBottom);
+        return (p_theme.themeName != "Alcool" && p_theme.typeOfClothes == typeClothers.eTop);
     }
 
     #endregion
