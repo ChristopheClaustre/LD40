@@ -126,8 +126,10 @@ public class ONEPartieIManager :
     [SerializeField] private List<Round> m_rounds = new List<Round>();
     [SerializeField] private Round m_currentRound = new Round();
     [SerializeField] private int m_numeroDeRound = 0; // << ébriété ??
+    [SerializeField] private Animator m_animatorUI;
     
     private bool m_hasPlayerPlayed = false;
+    private bool m_isPlayerPlaying = false;
     private bool m_goodResponse;
     private bool m_playerResponse;
     private bool m_hasPlayerWon = false;
@@ -156,6 +158,11 @@ public class ONEPartieIManager :
     // Update is called once per frame
     private void Update()
     {
+        if (m_isPlayerPlaying && Input.GetButton("Move car"))
+        {
+            playerAnswer(Input.GetAxis("Move car") < 0);
+        }
+
         if (m_hasPlayerPlayed)
         {
             if(m_goodResponse != m_playerResponse)
@@ -211,12 +218,20 @@ public class ONEPartieIManager :
     public void sendAnswer(bool p_answer)
     {
         m_goodResponse = p_answer;
+        m_isPlayerPlaying = true;
+        
+        if (m_animatorUI)
+            m_animatorUI.SetBool("Visible", true);
     }
 
     public void playerAnswer(bool p_answer)
     {
         m_playerResponse = p_answer;
         m_hasPlayerPlayed = true;
+        m_isPlayerPlaying = false;
+        
+        if (m_animatorUI)
+            m_animatorUI.SetBool("Visible", false);
     }
 
     public bool isTheGoodAnswer()
