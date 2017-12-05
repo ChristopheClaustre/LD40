@@ -142,7 +142,7 @@ public class Victime :
             {
                 isInDiscution = false;
                 Debug.Log(m_answer > 0);
-                ONEPartieIManager.Instance.sendAnswer((m_answer > 0));
+                ONEPartieIManager.Instance.sendAnswer((m_answer >= 0));
 
                 //Reinitialize answer
                 m_answer = 0.0f;
@@ -198,7 +198,7 @@ public class Victime :
 
         if(randomIndex < m_lovedThemes.Count)
         {
-            m_answer = m_answer + 1;
+            m_answer = m_answer + 2;
             return m_lovedThemes[randomIndex];
         }
         else
