@@ -45,16 +45,16 @@ public class ONEPartieIManager :
         get { return m_instance; }
     }
 
-    public bool IsPlayerPlayed
+    public bool HasPlayerPlayed
     {
         get
         {
-            return isPlayerPlayed;
+            return m_hasPlayerPlayed;
         }
 
         set
         {
-            isPlayerPlayed = value;
+            m_hasPlayerPlayed = value;
         }
     }
 
@@ -71,16 +71,16 @@ public class ONEPartieIManager :
         }
     }
 
-    public bool IsPlayerWin
+    public bool HasPlayerWon
     {
         get
         {
-            return isPlayerWin;
+            return m_hasPlayerWon;
         }
 
         set
         {
-            isPlayerWin = value;
+            m_hasPlayerWon = value;
         }
     }
 
@@ -126,11 +126,11 @@ public class ONEPartieIManager :
     [SerializeField] private List<Round> m_rounds = new List<Round>();
     [SerializeField] private Round m_currentRound = new Round();
     [SerializeField] private int m_numeroDeRound = 0; // << ébriété ??
-
-    private bool isPlayerPlayed = false;
+    
+    private bool m_hasPlayerPlayed = false;
     private bool m_goodResponse;
     private bool m_playerResponse;
-    private bool isPlayerWin = false;
+    private bool m_hasPlayerWon = false;
 
     public VictimeGenerator m_victimeGenerator;
     public VerresManager m_verreManager;
@@ -156,7 +156,7 @@ public class ONEPartieIManager :
     // Update is called once per frame
     private void Update()
     {
-        if(isPlayerPlayed)
+        if (m_hasPlayerPlayed)
         {
             if(m_goodResponse != m_playerResponse)
             {
@@ -164,15 +164,15 @@ public class ONEPartieIManager :
             }
             m_currentRound.m_remainingQuestions--;
             m_numeroDeRound++;
-
         }
+
         if(m_currentRound.m_remainingStrikes > 0 && m_currentRound.m_remainingQuestions == 0)
         {
-            isPlayerWin = true;
+            m_hasPlayerWon = true;
         }
         else
         {
-            isPlayerWin = false;
+            m_hasPlayerWon = false;
         }
     }
 
@@ -184,8 +184,8 @@ public class ONEPartieIManager :
     {
         currentVictime = m_victimeGenerator.generateVictime();
         //Generate a victime reset round variable
-        isPlayerPlayed = false;
-        isPlayerWin = false;
+        m_hasPlayerPlayed = false;
+        m_hasPlayerWon = false;
         //m_currentRound = new Round();
         m_currentRound = m_rounds[Mathf.Min(m_numeroDeRound, m_rounds.Count - 1)];
         m_currentRound.m_remainingStrikes = m_currentRound.m_numberOfStrikes;
@@ -216,7 +216,7 @@ public class ONEPartieIManager :
     public void playerAnswer(bool p_answer)
     {
         m_playerResponse = p_answer;
-        isPlayerPlayed = true;
+        m_hasPlayerPlayed = true;
     }
 
     public bool isTheGoodAnswer()

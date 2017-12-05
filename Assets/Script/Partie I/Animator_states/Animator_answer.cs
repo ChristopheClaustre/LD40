@@ -6,13 +6,13 @@ public class Animator_answer : StateMachineBehaviour {
     
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     //override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex) {
-    //
+    //     
     //}
 
     //OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        if(animator.gameObject.GetComponent<ONEPartieIManager>().IsPlayerPlayed)
+        if(animator.gameObject.GetComponent<ONEPartieIManager>().HasPlayerPlayed)
         {
             if(!animator.gameObject.GetComponent<ONEPartieIManager>().isTheGoodAnswer())
             {
@@ -25,7 +25,7 @@ public class Animator_answer : StateMachineBehaviour {
             }
             else
             {
-                if(animator.gameObject.GetComponent<ONEPartieIManager>().IsPlayerWin)
+                if(animator.gameObject.GetComponent<ONEPartieIManager>().HasPlayerWon)
                 {
                     animator.SetBool("isReadyForPart2", true);
                 }
@@ -33,8 +33,8 @@ public class Animator_answer : StateMachineBehaviour {
             animator.SetBool("isAnswered", true);
         }
         //Set to false game manager flags
-        animator.gameObject.GetComponent<ONEPartieIManager>().IsPlayerPlayed = false;
-        animator.gameObject.GetComponent<ONEPartieIManager>().IsPlayerWin = false;
+        animator.gameObject.GetComponent<ONEPartieIManager>().HasPlayerPlayed = false;
+        animator.gameObject.GetComponent<ONEPartieIManager>().HasPlayerWon = false;
     }
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
