@@ -24,10 +24,12 @@ public class DecorsGenerator :
     {
         get
         {
+            return Camera.main.transform.position;
+            /*
             if (m_hotspotDisparition)
                 return m_hotspotDisparition.transform.position;
 
-            return Vector3.zero;
+            return Vector3.zero;*/
         }
     }
     protected Vector3 PointApparition
